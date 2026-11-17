@@ -1,0 +1,10 @@
+{
+  "name": "uph-website-recreate",
+  "version": "1.0.0",
+  "description": "Universitas Pelita Harapan website recreation",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx serve dist -l 3000",
+    "start": "npx serve dist -l 3000"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/id/events/",
+    "slug": "id-events",
+    "url": "https://www.uph.edu/id/events/"
+  },
+  {
+    "path": "/id/kelas-karyawan/",
+    "slug": "id-kelas-karyawan",
+    "url": "https://www.uph.edu/id/kelas-karyawan/"
+  },
+  {
+    "path": "/id/academic/undergraduate/",
+    "slug": "id-academic-undergraduate",
+    "url": "https://www.uph.edu/id/academic/undergraduate/"
+  },
+  {
+    "path": "/id/academic/pascasarjana/",
+    "slug": "id-academic-pascasarjana",
+    "url": "https://www.uph.edu/id/academic/pascasarjana/"
+  }
+]

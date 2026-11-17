@@ -1,0 +1,341 @@
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = __dirname;
+const SRC = path.join(ROOT, 'src');
+const DIST = path.join(ROOT, 'dist');
+
+// Copy directory recursively
+function copyDirSync(src, dest) {
+  fs.mkdirSync(dest, { recursive: true });
+  const entries = fs.readdirSync(src, { withFileTypes: true });
+  for (const entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+    if (entry.isDirectory()) {
+      copyDirSync(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+}
+
+// Instagram URLs mapping to local downloaded assets
+const IG_PATTERNS = [
+  /https?:\/\/[^"'\s>]*891215265_18643603834042542[^"'\s>]*/g,
+  /https?:\/\/[^"'\s>]*870731506_18641097448042542[^"'\s>]*/g,
+  /https?:\/\/[^"'\s>]*870985915_18640383976042542[^"'\s>]*/g,
+  /https?:\/\/[^"'\s>]*866565035_18639963295042542[^"'\s>]*/g,
+  /https?:\/\/[^"'\s>]*852830492_18637635208042542[^"'\s>]*/g,
+  /https?:\/\/[^"'\s>]*848014973_18635725384042542[^"'\s>]*/g,
+];
+
+function processHtml(rawHtml, pagePath) {
+  let html = rawHtml;
+
+  // 1. Inject global stub script and critical layout rules as FIRST element in <head>
+  const headStub = `
+  <script>
+    window.fbq = window.fbq || function() {};
+    window._fbq = window.fbq;
+    var fbq = window.fbq;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function() {};
+    var gtag = window.gtag;
+  </script>
+  <style>
+    :root {
+      --uph-navy: #00205B;
+      --uph-dark-blue: #061B40;
+      --uph-gold: #FFB800;
+      --uph-gold-dark: #D4A017;
+      --uph-white: #ffffff;
+      --uph-gray-bg: #f3f3f3;
+      --uph-gray-border: #d2d2d2;
+    }
+    html, body {
+      overflow-x: hidden !important;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+    }
+    .uph-banner {
+      overflow: hidden !important;
+      position: relative !important;
+      width: 100% !important;
+    }
+    .uph-banner .owl-stage-outer {
+      overflow: hidden !important;
+      position: relative !important;
+      width: 100% !important;
+    }
+    .uph-banner.owl-carousel .owl-dots {
+      position: absolute !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      bottom: 32px !important;
+      display: flex !important;
+      justify-content: center !important;
+      z-index: 10 !important;
+    }
+    .uph-more-programs form {
+      margin-bottom: 0 !important;
+    }
+    @media (max-width: 576px) {
+      .uph-banner .uph-banner__ttl {
+        font-size: 34px !important;
+        line-height: 40px !important;
+      }
+    }
+    @media (min-width: 577px) {
+      .uph-banner .uph-banner__ttl {
+        font-size: 38px !important;
+        line-height: 46px !important;
+      }
+    }
+    @media (min-width: 992px) {
+      .uph-featured__body {
+        overflow: visible !important;
+      }
+      .uph-featured__list {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        width: calc(100% + 28px) !important;
+        margin-left: -14px !important;
+        margin-right: -14px !important;
+        transform: none !important;
+        padding: 0 !important;
+        gap: 0 !important;
+      }
+      .uph-featured .uph-featured__item {
+        flex: 0 0 33.3333333% !important;
+        max-width: 33.3333333% !important;
+        width: 33.3333333% !important;
+        padding: 14px !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+      }
+      .uph-featured__img {
+        width: 100% !important;
+        height: 282px !important;
+        overflow: hidden !important;
+      }
+      .uph-featured__img__el {
+        width: 100% !important;
+        height: 282px !important;
+        object-fit: cover !important;
+      }
+    }
+  </style>`;
+
+  if (html.includes('<head>')) {
+    html = html.replace('<head>', `<head>\n${headStub}`);
+  } else if (/<head\b[^>]*>/i.test(html)) {
+    html = html.replace(/<head\b[^>]*>/i, `$&\n${headStub}`);
+  }
+
+  // 2. Remove tracking scripts and noscripts
+  html = html.replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gi, (match) => {
+    const lower = match.toLowerCase();
+    if (
+      lower.includes("google-analytics") ||
+      lower.includes("googletagmanager") ||
+      lower.includes("googleads") ||
+      lower.includes("googleadservices") ||
+      lower.includes("doubleclick.net") ||
+      lower.includes("connect.facebook.net") ||
+      lower.includes("fbevents.js") ||
+      lower.includes("fb_pxl_code") ||
+      lower.includes("lasso-performance") ||
+      lower.includes("w3tc_lazyload") ||
+      lower.includes("w3-total-cache") ||
+      lower.includes("lazyload.min.js") ||
+      lower.includes("html5shiv.googlecode.com") ||
+      lower.includes("snippet.min.js") ||
+      lower.includes("abbb8ea4eca5d4fc9ea3f059f9d0fc93")
+    ) {
+      return "";
+    }
+    return match;
+  });
+
+  html = html.replace(/<noscript\b[^>]*>([\s\S]*?)<\/noscript>/gi, (match) => {
+    if (match.includes("facebook.com/tr") || match.includes("google")) {
+      return "";
+    }
+    return match;
+  });
+
+  // Ensure any standalone fbq calls are safely prefixed with window.fbq
+  html = html.replace(/\bfbq\s*\(/g, "window.fbq(");
+
+  // Remove conditional comments with external obsolete scripts
+  html = html.replace(/<!--\[if lt IE 9]>[\s\S]*?<!\[endif\]-->/gi, "");
+
+  // 3. Replace font-awesome CDN with local copy
+  html = html.replace(/https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/font-awesome\/4\.7\.0\/css\/font-awesome\.min\.css/g, "/assets/font-awesome.min.css");
+
+  // 4. Normalize uph domain asset paths
+  html = html.replace(/https:\/\/www\.uph\.edu\/wp-content\//g, "/wp-content/");
+  html = html.replace(/https:\/\/www\.uph\.edu\/wp-includes\//g, "/wp-includes/");
+  html = html.replace(/https:\/\/uph\.edu\/wp-content\//g, "/wp-content/");
+  html = html.replace(/https:\/\/uph\.edu\/wp-includes\//g, "/wp-includes/");
+
+  // Strip query parameters from local static assets (?x81484, ?ver=...)
+  html = html.replace(/(\/wp-(?:content|includes)\/[^"'\s>?]+)\?(?:x81484|ver=[^"'\s&>]+)[^"'\s>]*/g, "$1");
+
+  // 5. Map Instagram feed images to local copies
+  IG_PATTERNS.forEach((pattern, i) => {
+    html = html.replace(pattern, `/assets/instagram/ig${i + 1}.jpg`);
+  });
+
+  // 6. Fix <img> tags: populate src from data-src or data-lazy-src cleanly
+  html = html.replace(/<img([^>]+)>/gi, (match, attrs) => {
+    let srcMatch = attrs.match(/\ssrc="([^"]*)"/i) || attrs.match(/\ssrc='([^']*)'/i);
+    let dataSrcMatch = attrs.match(/\sdata-(?:lazy-)?src="([^"]*)"/i) || attrs.match(/\sdata-(?:lazy-)?src='([^']*)'/i);
+
+    let res = attrs;
+    if (dataSrcMatch && dataSrcMatch[1]) {
+      let realSrc = dataSrcMatch[1]
+        .replace(/https:\/\/www\.uph\.edu\//g, "/")
+        .replace(/https:\/\/uph\.edu\//g, "/")
+        .replace(/\?(?:x81484|ver=[^"'\s&>]+)[^"'\s>]*/g, "");
+
+      // Map instagram if present in data-src
+      IG_PATTERNS.forEach((p, i) => {
+        realSrc = realSrc.replace(p, `/assets/instagram/ig${i + 1}.jpg`);
+      });
+
+      if (!srcMatch || srcMatch[1].startsWith("data:image") || srcMatch[1].length === 0) {
+        if (attrs.includes('src="')) {
+          res = res.replace(/\ssrc="[^"]*"/i, ` src="${realSrc}"`);
+        } else if (attrs.includes("src='")) {
+          res = res.replace(/\ssrc='[^']*'/i, ` src="${realSrc}"`);
+        } else {
+          res = ` src="${realSrc}"` + res;
+        }
+      }
+    }
+
+    // Clean query parameters from src
+    res = res.replace(/(\/wp-content\/uploads\/[^"'\s>?]+)\?(?:x81484|ver=[^"'\s&>]+)[^"'\s>]*/g, "$1");
+
+    // Clean classes
+    res = res.replace(/class="([^"]*)"/i, (cMatch, cls) => {
+      let newCls = cls.replace(/\blazy\b/g, "").trim() + " loaded entered";
+      return `class="${newCls.replace(/\s+/g, " ")}"`;
+    });
+
+    // Add native lazy loading & asynchronous decoding for extreme speed
+    if (!res.includes('loading=')) {
+      res += ' loading="lazy"';
+    }
+    if (!res.includes('decoding=')) {
+      res += ' decoding="async"';
+    }
+
+    return `<img${res}>`;
+  });
+
+  // 7. Fix internal links to use standard local paths
+  html = html.replace(/href=["']https:\/\/www\.uph\.edu\/id\/(["'])/g, 'href="/id/$1');
+  html = html.replace(/href=["']https:\/\/www\.uph\.edu\/id\/([^"'\s]+)(["'])/g, 'href="/id/$1$2');
+  html = html.replace(/href=["']https:\/\/www\.uph\.edu\/(["'])/g, 'href="/id/$1');
+  html = html.replace(/href=["']https:\/\/uph\.edu\/id\/(["'])/g, 'href="/id/$1');
+  html = html.replace(/href=["']https:\/\/uph\.edu\/id\/([^"'\s]+)(["'])/g, 'href="/id/$1$2');
+  html = html.replace(/href=["']https:\/\/uph\.edu\/(["'])/g, 'href="/id/$1');
+
+  // Ensure navigation between our rebuilt routes
+  html = html.replace(/href=["']\/id\/events\/["']/g, 'href="/id/events/"');
+  html = html.replace(/href=["']\/id\/kelas-karyawan\/["']/g, 'href="/id/kelas-karyawan/"');
+  html = html.replace(/href=["']\/id\/academic\/undergraduate\/["']/g, 'href="/id/academic/undergraduate/"');
+  html = html.replace(/href=["']\/id\/academic\/pascasarjana\/["']/g, 'href="/id/academic/pascasarjana/"');
+
+  // 8. Remove hold-transition from body
+  html = html.replace(/(<body[^>]*)\bhold-transition\b([^>]*>)/i, '$1$2');
+
+  // 9. Fix start page inline styles from mobile capture that broke 1440px desktop layout
+  if (pagePath === '/id/') {
+    html = html.replace(/style="transform:\s*translate3d\(-780px,\s*0px,\s*0px\);\s*transition:\s*all;\s*width:\s*2730px;"/g, '');
+    html = html.replace(/style="width:\s*390px;"/g, '');
+    html = html.replace(/style="width:\s*1824px;"/g, '');
+    html = html.replace(/style="width:\s*1488px;\s*transform:\s*translate3d\(0px,\s*0px,\s*0px\);"/g, '');
+  }
+
+  // 10. Inject helper script before </body>
+  const clientScript = `
+<script src="/assets/main.js"></script>
+`;
+  if (html.includes('</body>')) {
+    html = html.replace('</body>', `${clientScript}</body>`);
+  } else {
+    html += clientScript;
+  }
+
+  return html;
+}
+
+console.log('Building UPH website...');
+
+// Clean and recreate dist
+if (fs.existsSync(DIST)) {
+  fs.rmSync(DIST, { recursive: true, force: true });
+}
+fs.mkdirSync(DIST, { recursive: true });
+
+// Copy all static assets into dist
+console.log('Copying static assets (wp-content, wp-includes, fonts, assets)...');
+copyDirSync(path.join(SRC, 'assets'), DIST);
+
+// Process and write all pages
+const pages = [
+  {
+    src: path.join(SRC, 'pages', 'index.html'),
+    outputs: [
+      path.join(DIST, 'index.html'),
+      path.join(DIST, 'id', 'index.html')
+    ],
+    pathName: '/id/'
+  },
+  {
+    src: path.join(SRC, 'pages', 'events.html'),
+    outputs: [
+      path.join(DIST, 'id', 'events', 'index.html')
+    ],
+    pathName: '/id/events/'
+  },
+  {
+    src: path.join(SRC, 'pages', 'kelas-karyawan.html'),
+    outputs: [
+      path.join(DIST, 'id', 'kelas-karyawan', 'index.html')
+    ],
+    pathName: '/id/kelas-karyawan/'
+  },
+  {
+    src: path.join(SRC, 'pages', 'undergraduate.html'),
+    outputs: [
+      path.join(DIST, 'id', 'academic', 'undergraduate', 'index.html')
+    ],
+    pathName: '/id/academic/undergraduate/'
+  },
+  {
+    src: path.join(SRC, 'pages', 'pascasarjana.html'),
+    outputs: [
+      path.join(DIST, 'id', 'academic', 'pascasarjana', 'index.html')
+    ],
+    pathName: '/id/academic/pascasarjana/'
+  }
+];
+
+for (const p of pages) {
+  console.log(`Processing ${p.pathName} from ${path.basename(p.src)}...`);
+  const rawHtml = fs.readFileSync(p.src, 'utf8');
+  const processed = processHtml(rawHtml, p.pathName);
+  for (const outPath of p.outputs) {
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, processed, 'utf8');
+    console.log(`  -> Wrote ${path.relative(DIST, outPath)} (${processed.length} bytes)`);
+  }
+}
+
+console.log('Build complete successfully!');

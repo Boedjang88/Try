@@ -1,0 +1,17 @@
+{
+  "name": "uph-website-recreate",
+  "version": "1.0.0",
+  "description": "Universitas Pelita Harapan website recreation",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -c \"#00205B,#D4AF37\" \"php artisan serve\" \"vite\" --names=laravel,vite",
+    "build": "vite build",
+    "serve": "php artisan serve"
+  },
+  "devDependencies": {
+    "alpinejs": "^3.17.5",
+    "concurrently": "^10.0.7",
+    "laravel-vite-plugin": "^3.2.1",
+    "vite": "^8.3.8"
+  }
+}

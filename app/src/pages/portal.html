@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>Unified University ERP, SIAKAD & LMS - Universitas Pelita Harapan</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/font-awesome.min.css">
+
+  <style>
+    :root {
+      --uph-navy: #00205B;
+      --uph-dark-blue: #061B40;
+      --uph-gold: #D4AF37;
+      --uph-gold-warm: #FFB800;
+      --uph-crimson: #C8102E;
+      --uph-slate: #F8FAFC;
+      --uph-gray-border: #E2E8F0;
+      --uph-text-dark: #0F172A;
+      --uph-text-muted: #64748B;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      background-color: var(--uph-slate);
+      color: var(--uph-text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+    /* Top Command Header */
+    .portal-header {
+      background-color: var(--uph-dark-blue);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      border-bottom: 3px solid var(--uph-gold);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .portal-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .portal-brand img {
+      height: 38px;
+    }
+    .portal-brand-text {
+      border-left: 1px solid rgba(255,255,255,0.25);
+      padding-left: 14px;
+    }
+    .portal-brand-text h1 {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .portal-brand-text p {
+      font-size: 11px;
+      color: var(--uph-gold-warm);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .portal-controls {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .role-badge {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      padding: 6px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .role-badge label {
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #94A3B8;
+      font-weight: 600;
+    }
+    .role-badge select {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      outline: none;
+      cursor: pointer;
+    }
+    .role-badge select option {
+      background: var(--uph-dark-blue);
+      color: #fff;
+    }
+    .public-link-btn {
+      color: #fff;
+      background: var(--uph-crimson);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+    .public-link-btn:hover {
+      background: #A00C24;
+    }
+
+    /* Main Layout */
+    .portal-layout {
+      display: flex;
+      flex: 1;
+    }
+    .portal-sidebar {
+      width: 280px;
+      background: #fff;
+      border-right: 1px solid var(--uph-gray-border);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+    .sidebar-user {
+      padding: 20px;
+      border-bottom: 1px solid var(--uph-gray-border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #FAFAFA;
+    }
+    .user-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--uph-navy);
+      color: var(--uph-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      border: 2px solid var(--uph-gold);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .user-meta h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--uph-navy);
+      line-height: 1.3;
+    }
+    .user-meta p {
+      font-size: 11px;
+      color: var(--uph-text-muted);
+      margin-top: 2px;
+    }
+    .sidebar-menu {
+      padding: 12px 0;
+      list-style: none;
+      flex: 1;
+    }
+    .sidebar-menu li a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 20px;
+      color: #334155;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      border-left: 3px solid transparent;
+      transition: all 0.2s;
+    }
+    .sidebar-menu li a:hover,
+    .sidebar-menu li a.active {
+      background: #F1F5F9;
+      color: var(--uph-navy);
+      border-left-color: var(--uph-gold);
+    }
+    .sidebar-menu li a i {
+      font-size: 15px;
+      width: 20px;
+      color: var(--uph-navy);
+    }
+
+    /* Content Area */
+    .portal-content {
+      flex: 1;
+      padding: 24px 28px;
+      overflow-y: auto;
+      max-width: 100%;
+    }
+    .content-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .content-title h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--uph-navy);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .content-title p {
+      font-size: 13px;
+      color: var(--uph-text-muted);
+      margin-top: 4px;
+    }
+    .semester-badge {
+      background: #E0E7FF;
+      color: var(--uph-navy);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* KPI Bento Cards */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+    .kpi-card {
+      background: #fff;
+      border: 1px solid var(--uph-gray-border);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .kpi-card .kpi-label {
+      font-size: 12px;
+      color: var(--uph-text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .kpi-card .kpi-val {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--uph-navy);
+      margin: 8px 0 4px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .kpi-card .kpi-sub {
+      font-size: 12px;
+      color: #10B981;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Section Panels */
+    .portal-panel {
+      background: #fff;
+      border: 1px solid var(--uph-gray-border);
+      border-radius: 8px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      overflow: hidden;
+    }
+    .panel-head {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--uph-gray-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #FAFAFA;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .panel-head h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--uph-navy);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .panel-body {
+      padding: 20px;
+    }
+
+    /* Academic Data Tables */
+    .data-table-container {
+      overflow-x: auto;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+    .data-table th {
+      background: var(--uph-slate);
+      color: var(--uph-navy);
+      font-weight: 700;
+      padding: 10px 14px;
+      border-bottom: 2px solid var(--uph-gray-border);
+      white-space: nowrap;
+    }
+    .data-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--uph-gray-border);
+      color: #334155;
+    }
+    .data-table tr:hover {
+      background: #F8FAFC;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .badge-success { background: #DCFCE7; color: #166534; }
+    .badge-warning { background: #FEF3C7; color: #92400E; }
+    .badge-danger { background: #FEE2E2; color: #991B1B; }
+    .badge-info { background: #E0E7FF; color: #3730A3; }
+
+    /* Action Buttons */
+    .btn-action {
+      background: var(--uph-navy);
+      color: #fff;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+    .btn-action:hover {
+      background: var(--uph-dark-blue);
+    }
+    .btn-gold {
+      background: var(--uph-gold);
+      color: var(--uph-dark-blue);
+      font-weight: 700;
+    }
+    .btn-gold:hover {
+      background: #C49E28;
+    }
+    .btn-crimson {
+      background: var(--uph-crimson);
+      color: #fff;
+      font-weight: 700;
+    }
+    .btn-crimson:hover {
+      background: #9B0B23;
+    }
+
+    /* Modal / Popups */
+    .interactive-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #061B40;
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 6px;
+      border-left: 4px solid var(--uph-gold);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 100;
+      font-size: 13px;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .portal-layout {
+        flex-direction: column;
+      }
+      .portal-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--uph-gray-border);
+      }
+      .sidebar-menu {
+        display: flex;
+        overflow-x: auto;
+        padding: 8px 12px;
+      }
+      .sidebar-menu li a {
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        white-space: nowrap;
+        padding: 8px 14px;
+      }
+      .sidebar-menu li a.active {
+        border-bottom-color: var(--uph-gold);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Enterprise Command Bar -->
+  <header class="portal-header">
+    <div class="portal-brand">
+      <a href="/id/">
+        <img src="/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png" alt="Universitas Pelita Harapan" />
+      </a>
+      <div class="portal-brand-text">
+        <h1>UNIFIED ENTERPRISE ERP, SIAKAD & LMS</h1>
+        <p>Universitas Pelita Harapan &bull; Single University Architecture</p>
+      </div>
+    </div>
+
+    <div class="portal-controls">
+      <div class="role-badge">
+        <label for="roleSelector"><i class="fa fa-user-circle"></i> Peran Portal:</label>
+        <select id="roleSelector" onchange="switchRole(this.value)">
+          <option value="mahasiswa" selected>1. Mahasiswa (Student)</option>
+          <option value="dosen">2. Dosen & DPA (Lecturer/Advisor)</option>
+          <option value="kaprodi">3. Kaprodi & Dekanat (Program Head)</option>
+          <option value="calon">4. Calon Mahasiswa (PMB Applicant)</option>
+          <option value="baak">5. BAAK & BAUK (Academic & Finance)</option>
+          <option value="eksekutif">6. Eksekutif & Rektorat (Executive)</option>
+        </select>
+      </div>
+      <a href="/id/" class="public-link-btn">
+        <i class="fa fa-globe"></i> Website Publik UPH
+      </a>
+    </div>
+  </header>
+
+  <!-- Portal Workspace -->
+  <div class="portal-layout">
+    
+    <!-- Contextual Sidebar -->
+    <aside class="portal-sidebar">
+      <div class="sidebar-user">
+        <div class="user-avatar" id="userAvatarText">JP</div>
+        <div class="user-meta">
+          <h3 id="userNameText">Jonathan Pratama</h3>
+          <p id="userRoleText">NIM: 01021200045 &bull; Informatika</p>
+        </div>
+      </div>
+
+      <ul class="sidebar-menu" id="sidebarMenu">
+        <!-- Dynamically rendered according to role -->
+      </ul>
+    </aside>
+
+    <!-- Main Operational Workspace -->
+    <main class="portal-content" id="workspaceContainer">
+      <!-- Injected role specific workspace -->
+    </main>
+
+  </div>
+
+  <div id="portalToast" class="interactive-toast">
+    <i class="fa fa-check-circle" style="color: #10B981; margin-right: 8px;"></i>
+    <span id="toastMessage">Operasi berhasil dijalankan!</span>
+  </div>
+
+  <script>
+    // State Management for Roles & Operational Modules
+    const ROLES_DATA = {
+      mahasiswa: {
+        name: "Jonathan Pratama",
+        meta: "NIM: 01021200045 &bull; S1 Informatika (2024)",
+        avatar: "JP",
+        menu: [
+          { id: "mhs-dashboard", icon: "fa-dashboard", label: "Dashboard Akademik" },
+          { id: "mhs-krs", icon: "fa-calendar-check-o", label: "KRS War & Rencana Studi" },
+          { id: "mhs-lms", icon: "fa-book", label: "LMS Perkuliahan (16 Sesi)" },
+          { id: "mhs-absensi", icon: "fa-qrcode", label: "Presensi Smart QR & GPS" },
+          { id: "mhs-khs", icon: "fa-file-text-o", label: "KHS & Transkrip Kumulatif" },
+          { id: "mhs-keuangan", icon: "fa-credit-card", label: "Tagihan & Virtual Account" },
+          { id: "mhs-skripsi", icon: "fa-graduation-cap", label: "Tugas Akhir & Bimbingan" }
+        ]
+      },
+      dosen: {
+        name: "Dr. Eng. Handi Kusuma, M.Kom.",
+        meta: "NIDN: 0315087801 &bull; Dosen Pembimbing Akademik",
+        avatar: "HK",
+        menu: [
+          { id: "dsn-approval-krs", icon: "fa-check-square-o", label: "Persetujuan KRS Mahasiswa" },
+          { id: "dsn-input-nilai", icon: "fa-table", label: "Input Nilai & Rubrik OBE" },
+          { id: "dsn-bap", icon: "fa-pencil-square-o", label: "Berita Acara Perkuliahan (BAP)" },
+          { id: "dsn-bkd", icon: "fa-line-chart", label: "Laporan Beban Kerja Dosen (BKD)" }
+        ]
+      },
+      kaprodi: {
+        name: "Prof. Dr. Ir. Edwin Sutanto, M.Sc.",
+        meta: "Ketua Program Studi S1 Informatika",
+        avatar: "ES",
+        menu: [
+          { id: "kpr-obe-matrix", icon: "fa-sitemap", label: "Pemetaan Kurikulum OBE & CPL" },
+          { id: "kpr-workload", icon: "fa-users", label: "Distribusi Beban Ajar Dosen" },
+          { id: "kpr-quota", icon: "fa-sliders", label: "Approval Kuota & Seksi Kelas" }
+        ]
+      },
+      calon: {
+        name: "Clara Angelica",
+        meta: "No. PMB: 2026-08192 &bull; Calon Mahasiswa S1",
+        avatar: "CA",
+        menu: [
+          { id: "pmb-status", icon: "fa-id-card", label: "Status Pendaftaran & Dokumen" },
+          { id: "pmb-cbt", icon: "fa-laptop", label: "Ujian Online (CBT) Masuk" },
+          { id: "pmb-loa", icon: "fa-certificate", label: "Letter of Acceptance (LoA)" }
+        ]
+      },
+      baak: {
+        name: "Tim Administrasi Akademik (BAAK)",
+        meta: "Biro Akademik, Kemahasiswaan & Keuangan",
+        avatar: "BK",
+        menu: [
+          { id: "baak-conflict", icon: "fa-clock-o", label: "Deteksi Konflik Ruang & Jadwal" },
+          { id: "baak-pddikti", icon: "fa-cloud-upload", label: "Sinkronisasi Feeder PDDIKTI" },
+          { id: "baak-billing", icon: "fa-money", label: "Billing Engine & Rekonsiliasi" }
+        ]
+      },
+      eksekutif: {
+        name: "Prof. Dr. (Hon.) Rektorat UPH",
+        meta: "Rektorat & Dewan Eksekutif Universitas",
+        avatar: "RK",
+        menu: [
+          { id: "exec-kpi", icon: "fa-bar-chart", label: "Executive University KPI" },
+          { id: "exec-accreditation", icon: "fa-shield", label: "Kesiapan Akreditasi 9 Kriteria" }
+        ]
+      }
+    };
+
+    let currentRole = "mahasiswa";
+    let activeTab = "mhs-dashboard";
+
+    function showToast(msg) {
+      const toast = document.getElementById("portalToast");
+      document.getElementById("toastMessage").innerText = msg;
+      toast.style.display = "block";
+      setTimeout(() => { toast.style.display = "none"; }, 3500);
+    }
+
+    function switchRole(roleKey) {
+      currentRole = roleKey;
+      const data = ROLES_DATA[roleKey];
+      document.getElementById("userNameText").innerHTML = data.name;
+      document.getElementById("userRoleText").innerHTML = data.meta;
+      document.getElementById("userAvatarText").innerText = data.avatar;
+
+      // Render Sidebar Menu
+      const menuEl = document.getElementById("sidebarMenu");
+      menuEl.innerHTML = "";
+      data.menu.forEach((item, idx) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="javascript:void(0)" class="${idx === 0 ? 'active' : ''}" onclick="selectTab('${item.id}', this)">
+          <i class="fa ${item.icon}"></i> ${item.label}
+        </a>`;
+        menuEl.appendChild(li);
+      });
+
+      activeTab = data.menu[0].id;
+      renderWorkspace();
+    }
+
+    function selectTab(tabId, el) {
+      document.querySelectorAll("#sidebarMenu a").forEach(a => a.classList.remove("active"));
+      if (el) el.classList.add("active");
+      activeTab = tabId;
+      renderWorkspace();
+    }
+
+    // Workspaces Rendering
+    function renderWorkspace() {
+      const ws = document.getElementById("workspaceContainer");
+      
+      // ==========================================
+      // 1. MAHASISWA ROLE WORKSPACES
+      // ==========================================
+      if (activeTab === "mhs-dashboard") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Dashboard Akademik & Status Mahasiswa</h2>
+              <p>Selamat datang kembali di Portal Akademik Terpadu Universitas Pelita Harapan.</p>
+            </div>
+            <div class="semester-badge"><i class="fa fa-bookmark"></i> Semester Ganjil 2026/2027</div>
+          </div>
+
+          <div class="bento-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">Indeks Prestasi Kumulatif (IPK)</span>
+              <span class="kpi-val tabular-nums">3.88 <small style="font-size:14px;color:#64748B;">/ 4.00</small></span>
+              <span class="kpi-sub"><i class="fa fa-arrow-up"></i> Predikat: Sangat Memuaskan</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">SKS Lulus / Beban Kumulatif</span>
+              <span class="kpi-val tabular-nums">114 <small style="font-size:14px;color:#64748B;">/ 144 SKS</small></span>
+              <span class="kpi-sub"><i class="fa fa-check"></i> Sisa 30 SKS untuk Kelulusan</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Presensi Kuliah Semester Berjalan</span>
+              <span class="kpi-val tabular-nums">96.4%</span>
+              <span class="kpi-sub"><i class="fa fa-shield"></i> Memenuhi Syarat Minimal 75% UTS/UAS</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Status Tagihan Finansial (BAUK)</span>
+              <span class="kpi-val" style="color:#10B981;font-size:22px;">Lunas (Clear)</span>
+              <span class="kpi-sub"><i class="fa fa-unlock"></i> Akses KRS & Ujian Terbuka Penuh</span>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-calendar"></i> Jadwal Kuliah Hari Ini (Senin, 17 November 2026)</h3>
+              <button class="btn-action" onclick="showToast('Mengunduh Jadwal Mingguan PDF...')"><i class="fa fa-download"></i> Unduh Jadwal</button>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Waktu</th>
+                    <th>Kode & Mata Kuliah</th>
+                    <th>SKS</th>
+                    <th>Kelas</th>
+                    <th>Ruang</th>
+                    <th>Dosen Pengampu</th>
+                    <th>Presensi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong class="tabular-nums">08:00 - 10:30</strong></td>
+                    <td><strong>CS304</strong> - Kecerdasan Buatan & Deep Learning</td>
+                    <td>3 SKS</td>
+                    <td>IF-A</td>
+                    <td>D502 (Smart Lab)</td>
+                    <td>Dr. Eng. Handi Kusuma, M.Kom.</td>
+                    <td><span class="badge badge-success"><i class="fa fa-check"></i> Hadir (QR Valid)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong class="tabular-nums">11:00 - 13:30</strong></td>
+                    <td><strong>CS309</strong> - Rekayasa Perangkat Lunak Skala Besar</td>
+                    <td>3 SKS</td>
+                    <td>IF-B</td>
+                    <td>D401</td>
+                    <td>Prof. Dr. Ir. Edwin Sutanto, M.Sc.</td>
+                    <td><span class="badge badge-info"><i class="fa fa-clock-o"></i> Perkuliahan Siang</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      } 
+      else if (activeTab === "mhs-krs") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>KRS War & Rencana Studi (Semester Ganjil 2026/2027)</h2>
+              <p>Maksimal SKS yang dapat diambil berdasarkan IPS Semester Lalu (3.88): <strong>24 SKS</strong>.</p>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-action btn-gold" onclick="showToast('Permohonan KRS berhasil diajukan ke Dosen PA Dr. Eng. Handi Kusuma!')"><i class="fa fa-paper-plane"></i> Ajukan KRS ke Dosen PA</button>
+              <a href="/portal/print/krs" target="_blank" class="btn-action" style="background:#00205B;color:#D4AF37;text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><i class="fa fa-print"></i> Cetak KRS (PDF)</a>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-shopping-cart"></i> Keranjang Mata Kuliah Terpilih (Total: <span id="krsTotalSks" class="tabular-nums">20</span> / 24 SKS)</h3>
+              <span class="badge badge-success">Status: Siap Diajukan ke Dosen PA</span>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Kode</th>
+                    <th>Mata Kuliah</th>
+                    <th>SKS</th>
+                    <th>Kelas</th>
+                    <th>Jadwal & Ruang</th>
+                    <th>Kuota Terisi</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="krsCartBody">
+                  <tr>
+                    <td><strong>CS304</strong></td>
+                    <td>Kecerdasan Buatan & Deep Learning</td>
+                    <td>3 SKS</td>
+                    <td>Kelas A</td>
+                    <td>Senin, 08:00 - 10:30 (D502)</td>
+                    <td><span class="badge badge-danger tabular-nums">38 / 40 (Sisa 2)</span></td>
+                    <td><button class="btn-action" style="background:#EF4444;" onclick="showToast('Mata kuliah dibatalkan dari keranjang KRS')"><i class="fa fa-trash"></i> Batal</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CS309</strong></td>
+                    <td>Rekayasa Perangkat Lunak Skala Besar</td>
+                    <td>3 SKS</td>
+                    <td>Kelas B</td>
+                    <td>Senin, 11:00 - 13:30 (D401)</td>
+                    <td><span class="badge badge-warning tabular-nums">32 / 40 (Sisa 8)</span></td>
+                    <td><button class="btn-action" style="background:#EF4444;" onclick="showToast('Mata kuliah dibatalkan dari keranjang KRS')"><i class="fa fa-trash"></i> Batal</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CS312</strong></td>
+                    <td>Keamanan Sistem Informasi & Cyber Defense</td>
+                    <td>3 SKS</td>
+                    <td>Kelas A</td>
+                    <td>Selasa, 13:00 - 15:30 (D501)</td>
+                    <td><span class="badge badge-success tabular-nums">25 / 40 (Sisa 15)</span></td>
+                    <td><button class="btn-action" style="background:#EF4444;" onclick="showToast('Mata kuliah dibatalkan dari keranjang KRS')"><i class="fa fa-trash"></i> Batal</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CS320</strong></td>
+                    <td>Pemrograman Sistem Terdistribusi & Cloud</td>
+                    <td>3 SKS</td>
+                    <td>Kelas A</td>
+                    <td>Rabu, 08:00 - 10:30 (D402)</td>
+                    <td><span class="badge badge-warning tabular-nums">35 / 40 (Sisa 5)</span></td>
+                    <td><button class="btn-action" style="background:#EF4444;" onclick="showToast('Mata kuliah dibatalkan dari keranjang KRS')"><i class="fa fa-trash"></i> Batal</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "mhs-lms") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>LMS Perkuliahan: CS304 - Kecerdasan Buatan & Deep Learning</h2>
+              <p>Struktur 16 Sesi Perkuliahan (14 Pembahasan Materi + UTS + UAS) berbasis OBE & RPS.</p>
+            </div>
+            <button class="btn-action" onclick="showToast('Mengunduh Rencana Pembelajaran Semester (RPS)...')"><i class="fa fa-file-pdf-o"></i> Unduh RPS Lengkap</button>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-list-ol"></i> Timeline Sesi Perkuliahan 1 s/d 16</h3>
+            </div>
+            <div class="panel-body">
+              <div style="display:flex;flex-direction:column;gap:14px;">
+                <div style="border:1px solid var(--uph-gray-border);border-left:4px solid #10B981;padding:16px;border-radius:6px;background:#F8FAFC;">
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <h4 style="font-size:14px;font-weight:700;color:var(--uph-navy);">Sesi 01: Pengenalan AI, Search Algorithms & Agent Rationality</h4>
+                    <span class="badge badge-success">Selesai &bull; 100% Kehadiran</span>
+                  </div>
+                  <p style="font-size:12px;color:#64748B;margin:6px 0 10px;">Capaian CPMK-1: Memahami representasi ruang keadaan dan algoritma uninformed search.</p>
+                  <div style="display:flex;gap:10px;">
+                    <button class="btn-action" onclick="showToast('Mengunduh Slide Kuliah Sesi 1...')"><i class="fa fa-download"></i> Slide PDF (3.2 MB)</button>
+                    <button class="btn-action" style="background:#475569;" onclick="showToast('Membuka Forum Diskusi Sesi 1...')"><i class="fa fa-comments"></i> Forum Tanya Jawab (12 Post)</button>
+                  </div>
+                </div>
+
+                <div style="border:1px solid var(--uph-gray-border);border-left:4px solid var(--uph-gold);padding:16px;border-radius:6px;background:#FFFDF5;">
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <h4 style="font-size:14px;font-weight:700;color:var(--uph-navy);">Sesi 07: Convolutional Neural Networks (CNN) & Computer Vision</h4>
+                    <span class="badge badge-warning">Sesi Aktif Pekan Ini</span>
+                  </div>
+                  <p style="font-size:12px;color:#64748B;margin:6px 0 10px;">Capaian CPMK-3: Merancang arsitektur model klasifikasi citra digital berbasis PyTorch.</p>
+                  <div style="display:flex;gap:10px;">
+                    <button class="btn-action" onclick="showToast('Mengunduh Materi Slide CNN...')"><i class="fa fa-download"></i> Slide Materi & Code Notebook</button>
+                    <button class="btn-action btn-gold" onclick="showToast('Membuka Ruang Pengumpulan Tugas (Upload Code)...')"><i class="fa fa-upload"></i> Kumpul Tugas (Due: 20 Nov 23:59)</button>
+                  </div>
+                </div>
+
+                <div style="border:1px solid var(--uph-gray-border);border-left:4px solid var(--uph-crimson);padding:16px;border-radius:6px;background:#FFF5F5;">
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <h4 style="font-size:14px;font-weight:700;color:var(--uph-crimson);">Sesi 08: Ujian Tengah Semester (UTS) - Ujian Terjadwal</h4>
+                    <span class="badge badge-danger">Jadwal: 24 Nov 2026, Ruang D502</span>
+                  </div>
+                  <p style="font-size:12px;color:#64748B;margin:6px 0 10px;">Evaluasi capaian CPMK 1, 2, dan 3 dengan bobot 25% dari nilai akhir.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "mhs-absensi") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Smart Presensi Terintegrasi (QR Dynamic & GPS Geofence)</h2>
+              <p>Sistem pencatatan kehadiran presisi berbasis lokasi kampus dan kode token terenkripsi.</p>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:20px;">
+            <div class="portal-panel">
+              <div class="panel-head">
+                <h3><i class="fa fa-qrcode"></i> Validasi Token QR Kuliah Hari Ini</h3>
+              </div>
+              <div class="panel-body" style="text-align:center;">
+                <div style="display:inline-block;padding:16px;background:#fff;border:2px dashed var(--uph-navy);border-radius:8px;margin-bottom:14px;">
+                  <i class="fa fa-qrcode" style="font-size:140px;color:var(--uph-navy);"></i>
+                </div>
+                <p style="font-size:13px;color:#64748B;margin-bottom:14px;">Token berganti otomatis setiap 15 detik untuk mencegah kecurangan titip absen.</p>
+                <button class="btn-action btn-gold" onclick="showToast('Presensi QR berhasil diverifikasi! Status: HADIR (Sesi 07)')"><i class="fa fa-camera"></i> Pindai QR Sekarang</button>
+              </div>
+            </div>
+
+            <div class="portal-panel">
+              <div class="panel-head">
+                <h3><i class="fa fa-map-marker"></i> Koordinat Geofencing Kampus Lippo Village</h3>
+              </div>
+              <div class="panel-body">
+                <div style="background:#F1F5F9;padding:14px;border-radius:6px;font-size:13px;margin-bottom:14px;">
+                  <p><strong>Titik Pusat Kampus:</strong> -6.225574, 106.608316</p>
+                  <p><strong>Radius Akses:</strong> 300 Meter dari Gedung D UPH</p>
+                  <p><strong>Status GPS Perangkat:</strong> <span style="color:#10B981;font-weight:700;">Di Dalam Area Valid (12 meter dari Smart Lab)</span></p>
+                </div>
+                <button class="btn-action" style="width:100%;justify-content:center;" onclick="showToast('Lokasi GPS divalidasi. Presensi berhasil dicatat!')"><i class="fa fa-crosshairs"></i> Konfirmasi Kehadiran Berbasis Geofence</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "mhs-khs") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Kartu Hasil Studi (KHS) & Transkrip Akademik Kumulatif</h2>
+              <p>Program Studi: S1 Informatika &bull; Tahun Akademik: 2026/2027 Ganjil</p>
+            </div>
+            <a href="/portal/print/khs-transcript" target="_blank" class="btn-action btn-gold" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><i class="fa fa-print"></i> Cetak Transkrip Resmi (PDF)</a>
+          </div>
+
+          <div class="bento-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">Indeks Prestasi Semester (IPS)</span>
+              <span class="kpi-val tabular-nums">3.92</span>
+              <span class="kpi-sub"><i class="fa fa-check"></i> Beban SKS Semester: 20 SKS</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Indeks Prestasi Kumulatif (IPK)</span>
+              <span class="kpi-val tabular-nums">3.88</span>
+              <span class="kpi-sub"><i class="fa fa-trophy"></i> Predikat: Cum Laude</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Status Evaluasi Dosen (EDOM)</span>
+              <span class="kpi-val" style="color:#10B981;font-size:22px;">100% Selesai</span>
+              <span class="kpi-sub"><i class="fa fa-unlock"></i> Akses KHS Terbuka Penuh</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Standing Akademik (EWS)</span>
+              <span class="kpi-val" style="color:#10B981;font-size:22px;">Normal / Baik</span>
+              <span class="kpi-sub"><i class="fa fa-shield"></i> Tidak Ada Catatan Probation</span>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-table"></i> Nilai Semester Berjalan (Semester 5)</h3>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Kode MK</th>
+                    <th>Nama Mata Kuliah</th>
+                    <th>SKS</th>
+                    <th>Nilai Angka</th>
+                    <th>Nilai Huruf</th>
+                    <th>Bobot Mutu</th>
+                    <th>SKS x Bobot</th>
+                    <th>Status OBE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>CS304</strong></td>
+                    <td>Kecerdasan Buatan & Deep Learning</td>
+                    <td>3 SKS</td>
+                    <td class="tabular-nums">89.65</td>
+                    <td><span class="badge badge-success">A</span></td>
+                    <td class="tabular-nums">4.00</td>
+                    <td class="tabular-nums">12.00</td>
+                    <td><span class="badge badge-info">CPL Tercapai (94%)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CS309</strong></td>
+                    <td>Rekayasa Perangkat Lunak Skala Besar</td>
+                    <td>3 SKS</td>
+                    <td class="tabular-nums">84.90</td>
+                    <td><span class="badge badge-success">A-</span></td>
+                    <td class="tabular-nums">3.75</td>
+                    <td class="tabular-nums">11.25</td>
+                    <td><span class="badge badge-info">CPL Tercapai (88%)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CS312</strong></td>
+                    <td>Keamanan Sistem Informasi & Cyber Defense</td>
+                    <td>3 SKS</td>
+                    <td class="tabular-nums">91.20</td>
+                    <td><span class="badge badge-success">A</span></td>
+                    <td class="tabular-nums">4.00</td>
+                    <td class="tabular-nums">12.00</td>
+                    <td><span class="badge badge-info">CPL Tercapai (96%)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "mhs-keuangan") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Tagihan Keuangan Mahasiswa & Virtual Account (BAUK)</h2>
+              <p>Struktur Biaya: BPP Pokok Semester + Beban SKS Variabel + Laboratorium</p>
+            </div>
+            <a href="/portal/print/kwitansi" target="_blank" class="btn-action" style="background:#059669;color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><i class="fa fa-receipt"></i> Unduh Kwitansi Resmi (PDF)</a>
+          </div>
+
+          <div class="bento-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">Total Tagihan Semester Ini</span>
+              <span class="kpi-val tabular-nums" style="font-size:22px;">Rp 20.500.000</span>
+              <span class="kpi-sub"><i class="fa fa-info-circle"></i> BPP + 20 SKS Variabel</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Beasiswa / Potongan Prestasi</span>
+              <span class="kpi-val tabular-nums" style="font-size:22px;color:#10B981;">- Rp 5.125.000</span>
+              <span class="kpi-sub"><i class="fa fa-gift"></i> Beasiswa Merit UPH Tier Silver (25%)</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Total Pembayaran Wajib</span>
+              <span class="kpi-val tabular-nums" style="font-size:22px;">Rp 15.375.000</span>
+              <span class="kpi-sub"><i class="fa fa-check-circle"></i> Status: LUNAS PENUH</span>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-credit-card"></i> Jadwal Angsuran & Nomor Virtual Account Aktif</h3>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Term Pembayaran</th>
+                    <th>Bank Mitra</th>
+                    <th>Nomor Virtual Account</th>
+                    <th>Jumlah Tagihan</th>
+                    <th>Jatuh Tempo</th>
+                    <th>Status Pembayaran</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Cicilan 1 (Syarat KRS)</strong></td>
+                    <td>BCA Virtual Account</td>
+                    <td><strong class="tabular-nums" style="letter-spacing:1px;">8012801021200045</strong></td>
+                    <td class="tabular-nums">Rp 6.150.000</td>
+                    <td>10 Agustus 2026</td>
+                    <td><span class="badge badge-success"><i class="fa fa-check"></i> Terbayar (Lunas)</span></td>
+                    <td><button class="btn-action" onclick="showToast('Kwitansi BCA Terunduh')">Unduh Slip</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cicilan 2 (Syarat UTS)</strong></td>
+                    <td>Mandiri Virtual Account</td>
+                    <td><strong class="tabular-nums" style="letter-spacing:1px;">8877001021200045</strong></td>
+                    <td class="tabular-nums">Rp 4.612.500</td>
+                    <td>15 Oktober 2026</td>
+                    <td><span class="badge badge-success"><i class="fa fa-check"></i> Terbayar (Lunas)</span></td>
+                    <td><button class="btn-action" onclick="showToast('Kwitansi Mandiri Terunduh')">Unduh Slip</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cicilan 3 (Syarat UAS)</strong></td>
+                    <td>BNI Virtual Account</td>
+                    <td><strong class="tabular-nums" style="letter-spacing:1px;">880801021200045</strong></td>
+                    <td class="tabular-nums">Rp 4.612.500</td>
+                    <td>15 Desember 2026</td>
+                    <td><span class="badge badge-success"><i class="fa fa-check"></i> Terbayar (Lunas)</span></td>
+                    <td><button class="btn-action" onclick="showToast('Kwitansi BNI Terunduh')">Unduh Slip</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "mhs-skripsi") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Manajemen Tugas Akhir (Skripsi) & Portofolio SKPI</h2>
+              <p>Topik: Sistem Deteksi Anomali Jaringan Berbasis Deep Autoencoder Skala Besar</p>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button class="btn-action btn-gold" onclick="showToast('Pendaftaran Sidang Skripsi berhasil diajukan!')"><i class="fa fa-graduation-cap"></i> Daftar Sidang Akhir</button>
+              <a href="/portal/print/skpi" target="_blank" class="btn-action" style="background:#00205B;color:#D4AF37;text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><i class="fa fa-certificate"></i> Cetak SKPI Bilingual (PDF)</a>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">Dosen Pembimbing 1</span>
+              <span class="kpi-val" style="font-size:16px;">Prof. Dr. Ir. Edwin Sutanto</span>
+              <span class="kpi-sub"><i class="fa fa-check"></i> 8 Logbook Disetujui</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Dosen Pembimbing 2</span>
+              <span class="kpi-val" style="font-size:16px;">Dr. Eng. Handi Kusuma</span>
+              <span class="kpi-sub"><i class="fa fa-check"></i> 8 Logbook Disetujui</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Uji Plagiarisme (Turnitin)</span>
+              <span class="kpi-val tabular-nums" style="color:#10B981;font-size:24px;">11.4%</span>
+              <span class="kpi-sub"><i class="fa fa-shield"></i> Lolos Syarat Ambang &lt; 20%</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Status Kelayakan Sidang</span>
+              <span class="kpi-val" style="color:#10B981;font-size:20px;">Siap Sidang Akhir</span>
+              <span class="kpi-sub"><i class="fa fa-unlock"></i> Semua Clearance Terpenuhi</span>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-book"></i> Logbook Bimbingan Skripsi Digital (Progress: 8 / 8 Sesi)</h3>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Sesi</th>
+                    <th>Tanggal Bimbingan</th>
+                    <th>Materi & Catatan Arahan Dosen</th>
+                    <th>Dosen Pembimbing</th>
+                    <th>Status Validasi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Sesi 8</strong></td>
+                    <td>12 Nov 2026</td>
+                    <td>Finalisasi Bab 5 Kesimpulan, Saran, dan Pembahasan Paper Jurnal Internasional</td>
+                    <td>Prof. Dr. Ir. Edwin Sutanto</td>
+                    <td><span class="badge badge-success"><i class="fa fa-check"></i> Disetujui & TTD Digital</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sesi 7</strong></td>
+                    <td>28 Okt 2026</td>
+                    <td>Validasi Hasil Pengujian Akurasi F1-Score Model Autoencoder (98.2%)</td>
+                    <td>Dr. Eng. Handi Kusuma</td>
+                    <td><span class="badge badge-success"><i class="fa fa-check"></i> Disetujui & TTD Digital</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+
+      // ==========================================
+      // 2. DOSEN & DOSEN PA WORKSPACES
+      // ==========================================
+      else if (activeTab === "dsn-approval-krs") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Persetujuan KRS Mahasiswa Bimbingan Akademik (Dosen PA)</h2>
+              <p>Dosen PA: Dr. Eng. Handi Kusuma, M.Kom. &bull; Total Mahasiswa Bimbingan: 24 Mahasiswa</p>
+            </div>
+            <button class="btn-action btn-gold" onclick="showToast('Semua permohonan KRS yang memenuhi syarat telah disetujui massal!')"><i class="fa fa-check-double"></i> Setujui Semua (Batch Approval)</button>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-users"></i> Antrean Permohonan Rencana Studi Semester Ganjil 2026/2027</h3>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>NIM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Semester</th>
+                    <th>IPS Lalu</th>
+                    <th>SKS Diajukan</th>
+                    <th>Max SKS</th>
+                    <th>Status Finansial</th>
+                    <th>Aksi Verifikasi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong class="tabular-nums">01021200045</strong></td>
+                    <td>Jonathan Pratama</td>
+                    <td>Semester 5</td>
+                    <td class="tabular-nums">3.88</td>
+                    <td><strong class="tabular-nums">20 SKS</strong></td>
+                    <td>24 SKS</td>
+                    <td><span class="badge badge-success">Lunas</span></td>
+                    <td>
+                      <button class="btn-action btn-gold" onclick="showToast('KRS Jonathan Pratama berhasil disetujui!')"><i class="fa fa-check"></i> Setujui</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong class="tabular-nums">01021200072</strong></td>
+                    <td>Stephanie Widjaja</td>
+                    <td>Semester 5</td>
+                    <td class="tabular-nums">3.75</td>
+                    <td><strong class="tabular-nums">21 SKS</strong></td>
+                    <td>24 SKS</td>
+                    <td><span class="badge badge-success">Lunas</span></td>
+                    <td>
+                      <button class="btn-action btn-gold" onclick="showToast('KRS Stephanie Widjaja berhasil disetujui!')"><i class="fa fa-check"></i> Setujui</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong class="tabular-nums">01021200099</strong></td>
+                    <td>Kevin Christian</td>
+                    <td>Semester 3</td>
+                    <td class="tabular-nums">2.35</td>
+                    <td><strong class="tabular-nums" style="color:#EF4444;">21 SKS</strong></td>
+                    <td>18 SKS</td>
+                    <td><span class="badge badge-warning">Cicilan 1 Lunas</span></td>
+                    <td>
+                      <button class="btn-action btn-crimson" onclick="showToast('KRS Kevin ditolak: SKS melebihi batas maksimal IPS 2.35 (Max 18 SKS)')"><i class="fa fa-times"></i> Tolak (Revisi SKS)</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "dsn-input-nilai") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Spreadsheet Input Nilai & Formula Rubrik OBE</h2>
+              <p>Mata Kuliah: CS304 - Kecerdasan Buatan (Kelas A &bull; Semester Ganjil 2026/2027)</p>
+            </div>
+            <div style="display:flex;gap:10px;">
+              <button class="btn-action" onclick="showToast('Impor nilai dari file Excel / CSV...')"><i class="fa fa-file-excel-o"></i> Impor Excel</button>
+              <button class="btn-action btn-gold" onclick="showToast('Nilai berhasil disimpan dan dikunci untuk Kaprodi!')"><i class="fa fa-lock"></i> Kunci Nilai Final</button>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-body data-table-container">
+              <table class="data-table" id="gradingSheetTable">
+                <thead>
+                  <tr>
+                    <th>NIM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Kehadiran (10%)</th>
+                    <th>Tugas (20%)</th>
+                    <th>Quiz (15%)</th>
+                    <th>UTS (25%)</th>
+                    <th>UAS (30%)</th>
+                    <th>Nilai Angka</th>
+                    <th>Nilai Huruf</th>
+                    <th>CPL Attainment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tabular-nums">01021200045</td>
+                    <td><strong>Jonathan Pratama</strong></td>
+                    <td><input type="number" value="100" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><input type="number" value="92" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><input type="number" value="88" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><input type="number" value="85" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><input type="number" value="90" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><strong class="tabular-nums">89.65</strong></td>
+                    <td><span class="badge badge-success">A (4.00)</span></td>
+                    <td><span class="badge badge-info tabular-nums">94%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="tabular-nums">01021200072</td>
+                    <td><strong>Stephanie Widjaja</strong></td>
+                    <td><input type="number" value="95" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><input type="number" value="85" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><input type="number" value="80" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><input type="number" value="82" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><input type="number" value="86" style="width:60px;padding:4px;border:1px solid #CBD5E1;border-radius:4px;" /></td>
+                    <td><strong class="tabular-nums">84.90</strong></td>
+                    <td><span class="badge badge-success">A- (3.75)</span></td>
+                    <td><span class="badge badge-info tabular-nums">88%</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "dsn-bap") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Berita Acara Perkuliahan (BAP) & Presensi Pengajaran Dosen</h2>
+              <p>Pencatatan materi pengajaran, metode kuliah, dan tanda tangan digital perkuliahan.</p>
+            </div>
+            <button class="btn-action btn-gold" onclick="showToast('Berita Acara Perkuliahan (BAP) Sesi 07 berhasil ditandatangani secara digital!')"><i class="fa fa-pencil"></i> Tanda Tangan Digital BAP</button>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-body">
+              <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;margin-bottom:20px;">
+                <div>
+                  <label style="font-size:12px;font-weight:700;color:var(--uph-navy);display:block;margin-bottom:6px;">Mata Kuliah & Kelas</label>
+                  <select style="width:100%;padding:10px;border:1px solid var(--uph-gray-border);border-radius:4px;">
+                    <option>CS304 - Kecerdasan Buatan (Kelas A)</option>
+                    <option>CS312 - Keamanan Sistem Informasi (Kelas B)</option>
+                  </select>
+                </div>
+                <div>
+                  <label style="font-size:12px;font-weight:700;color:var(--uph-navy);display:block;margin-bottom:6px;">Sesi Pertemuan</label>
+                  <select style="width:100%;padding:10px;border:1px solid var(--uph-gray-border);border-radius:4px;">
+                    <option>Sesi 07 (Senin, 17 Nov 2026, 08:00 - 10:30)</option>
+                    <option>Sesi 08 (UTS)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="margin-bottom:20px;">
+                <label style="font-size:12px;font-weight:700;color:var(--uph-navy);display:block;margin-bottom:6px;">Materi / Pokok Bahasan yang Diajarkan</label>
+                <textarea rows="3" style="width:100%;padding:10px;border:1px solid var(--uph-gray-border);border-radius:4px;">Arsitektur Convolutional Neural Networks (CNN): Layer Konvolusi, Pooling, Receptive Field, dan Implementasi PyTorch Klasifikasi Citra.</textarea>
+              </div>
+
+              <div style="background:#F8FAFC;padding:16px;border-radius:6px;font-size:13px;border-left:4px solid #10B981;">
+                <p><strong>Kehadiran Mahasiswa:</strong> 38 dari 40 Mahasiswa Hadir (95.0% Kehadiran Terverifikasi QR/GPS)</p>
+                <p><strong>Kode BAP Digital:</strong> BAP/20261117/CS304-A-S07 (Terenkripsi SHA-256)</p>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "dsn-bkd") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Laporan Beban Kerja Dosen (BKD) Tri Dharma Perguruan Tinggi</h2>
+              <p>Evaluasi Pemenuhan Standar Nasional Ditjen Dikti (Ambang Batas: 12.0 - 16.0 SKS)</p>
+            </div>
+            <button class="btn-action btn-gold" onclick="showToast('Laporan BKD berhasil dikirim ke Asesor Internal UPH!')"><i class="fa fa-send"></i> Kirim Laporan BKD</button>
+          </div>
+
+          <div class="bento-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">Pendidikan & Pengajaran (Min 6 SKS)</span>
+              <span class="kpi-val tabular-nums">9.0 SKS</span>
+              <span class="kpi-sub"><i class="fa fa-check"></i> 3 Kelas Matakuliah S1</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Penelitian & Publikasi (Min 2 SKS)</span>
+              <span class="kpi-val tabular-nums">3.5 SKS</span>
+              <span class="kpi-sub"><i class="fa fa-book"></i> 1 Paper Scopus Q2</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Pengabdian Masyarakat (Min 1 SKS)</span>
+              <span class="kpi-val tabular-nums">1.5 SKS</span>
+              <span class="kpi-sub"><i class="fa fa-heart"></i> Pelatihan AI UMKM</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Total Beban BKD Semester Ini</span>
+              <span class="kpi-val tabular-nums" style="color:#10B981;">14.0 SKS</span>
+              <span class="kpi-sub"><i class="fa fa-check-circle"></i> Status: MEMENUHI SYARAT BKD</span>
+            </div>
+          </div>
+        `;
+      }
+
+      // ==========================================
+      // 3. KAPRODI & DEKANAT WORKSPACES
+      // ==========================================
+      else if (activeTab === "kpr-obe-matrix") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Matriks Pemetaan Kurikulum OBE (CPL &bull; CPMK &bull; Mata Kuliah)</h2>
+              <p>Program Studi: S1 Informatika &bull; Akreditasi: <strong>Unggul (LAM INFOKOM)</strong></p>
+            </div>
+            <button class="btn-action" onclick="showToast('Ekspor Portofolio Kurikulum OBE...')"><i class="fa fa-print"></i> Cetak Dokumen OBE</button>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Kode CPL</th>
+                    <th>Deskripsi Capaian Pembelajaran Lulusan (CPL)</th>
+                    <th>Kategori</th>
+                    <th>Mata Kuliah Pendukung</th>
+                    <th>Target Ketercapaian</th>
+                    <th>Realisasi Ketercapaian</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>CPL-01</strong></td>
+                    <td>Mampu merancang dan menganalisis algoritma komputasi cerdas skala industri</td>
+                    <td>Pengetahuan</td>
+                    <td>Kecerdasan Buatan, Algoritma Lanjut, Machine Learning</td>
+                    <td class="tabular-nums">80.00%</td>
+                    <td><span class="badge badge-success tabular-nums">86.40% (Tercapai)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CPL-02</strong></td>
+                    <td>Mampu mengimplementasikan rekayasa perangkat lunak dengan standar arsitektur bersih</td>
+                    <td>Keterampilan Khusus</td>
+                    <td>RPL Skala Besar, Cloud Architecture, DevOps</td>
+                    <td class="tabular-nums">75.00%</td>
+                    <td><span class="badge badge-success tabular-nums">82.10% (Tercapai)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CPL-03</strong></td>
+                    <td>Memiliki integritas etika profesional dan kepemimpinan berwawasan global</td>
+                    <td>Sikap</td>
+                    <td>Etika Profesi, Leadership & Karakter UPH</td>
+                    <td class="tabular-nums">85.00%</td>
+                    <td><span class="badge badge-success tabular-nums">91.00% (Tercapai)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "kpr-workload") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Distribusi Beban Ajar & Rasio Dosen-Mahasiswa Program Studi</h2>
+              <p>Monitoring kecukupan rasio Dikti (Standar Sains & Teknologi: 1 : 20)</p>
+            </div>
+            <button class="btn-action btn-gold" onclick="showToast('Penetapan SK Pengajaran Semester Ganjil 2026/2027 berhasil disahkan!')"><i class="fa fa-check"></i> Sahkan SK Beban Ajar</button>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>NIDN</th>
+                    <th>Nama Dosen</th>
+                    <th>Jabatan Fungsional</th>
+                    <th>Mata Kuliah Diampu</th>
+                    <th>Total SKS Ajar</th>
+                    <th>Status Beban</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong class="tabular-nums">0315087801</strong></td>
+                    <td>Dr. Eng. Handi Kusuma, M.Kom.</td>
+                    <td>Lektor Kepala</td>
+                    <td>CS304 Kecerdasan Buatan (2 Kelas), CS101 Algoritma</td>
+                    <td><strong class="tabular-nums">9 SKS</strong></td>
+                    <td><span class="badge badge-success">Ideal (Aman)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong class="tabular-nums">0322046502</strong></td>
+                    <td>Prof. Dr. Ir. Edwin Sutanto, M.Sc.</td>
+                    <td>Guru Besar</td>
+                    <td>CS309 RPL Skala Besar, CS501 Rekayasa Lanjut</td>
+                    <td><strong class="tabular-nums">6 SKS</strong></td>
+                    <td><span class="badge badge-success">Ideal (Aman)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "kpr-quota") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Approval Kuota Kelas & Seksi Paralel (KRS War Capacity)</h2>
+              <p>Manajemen kuota kursi kelas untuk mengantisipasi lonjakan permintaan mahasiswa.</p>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Mata Kuliah</th>
+                    <th>Seksi Kelas</th>
+                    <th>Ruang Kelas</th>
+                    <th>Kuota Terisi</th>
+                    <th>Kapasitas Ruang</th>
+                    <th>Aksi Kaprodi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>CS304 - Kecerdasan Buatan</strong></td>
+                    <td>Kelas A</td>
+                    <td>D502 (Smart Lab)</td>
+                    <td><span class="badge badge-danger tabular-nums">38 / 40 (95%)</span></td>
+                    <td>45 Kursi</td>
+                    <td>
+                      <button class="btn-action btn-gold" onclick="showToast('Kuota Kelas A berhasil dinaikkan menjadi 45 kursi!')"><i class="fa fa-plus"></i> Tambah Kuota (+5)</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>CS309 - RPL Skala Besar</strong></td>
+                    <td>Kelas B</td>
+                    <td>D401</td>
+                    <td><span class="badge badge-warning tabular-nums">32 / 40 (80%)</span></td>
+                    <td>40 Kursi</td>
+                    <td>
+                      <button class="btn-action" onclick="showToast('Membuka Seksi Paralel Kelas C...')"><i class="fa fa-code-fork"></i> Buka Seksi C</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+
+      // ==========================================
+      // 4. CALON MAHASISWA (PMB) WORKSPACES
+      // ==========================================
+      else if (activeTab === "pmb-status") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Status Pendaftaran & Verifikasi Berkas (PMB 2026)</h2>
+              <p>Calon Mahasiswa: Clara Angelica &bull; No. Pendaftaran: <strong>PMB-2026-08192</strong></p>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">Jalur Pendaftaran</span>
+              <span class="kpi-val" style="font-size:18px;">Beasiswa Prestasi UPH</span>
+              <span class="kpi-sub"><i class="fa fa-star"></i> Pilihan 1: S1 Informatika</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Status Biaya Formulir</span>
+              <span class="kpi-val" style="color:#10B981;font-size:20px;">Lunas (Rp 350.000)</span>
+              <span class="kpi-sub"><i class="fa fa-check"></i> BCA VA: 80128202608192</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Hasil Ujian CBT Masuk</span>
+              <span class="kpi-val tabular-nums" style="color:#10B981;font-size:22px;">88.50 <small>/ 100</small></span>
+              <span class="kpi-sub"><i class="fa fa-check"></i> Lolos Ambang Batas</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Status Penerimaan</span>
+              <span class="kpi-val" style="color:#10B981;font-size:20px;">DITERIMA (Lolos)</span>
+              <span class="kpi-sub"><i class="fa fa-certificate"></i> LoA Siap Diunduh</span>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-upload"></i> Kelengkapan Dokumen Persyaratan Digital</h3>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Jenis Berkas</th>
+                    <th>Nama File Terunggah</th>
+                    <th>Tanggal Unggah</th>
+                    <th>Status Verifikasi BAAK</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Ijazah / Rapor SMA Smt 1-5</strong></td>
+                    <td>Rapor_Clara_Angelica.pdf</td>
+                    <td>10 Nov 2026</td>
+                    <td><span class="badge badge-success"><i class="fa fa-check"></i> Terverifikasi Valid</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>KTP & Kartu Keluarga (KK)</strong></td>
+                    <td>Identitas_Keluarga.pdf</td>
+                    <td>10 Nov 2026</td>
+                    <td><span class="badge badge-success"><i class="fa fa-check"></i> Terverifikasi Valid</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "pmb-cbt") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Computer-Based Test (CBT) Ujian Masuk Online UPH</h2>
+              <p>Simulasi Ujian Masuk Terintegrasi dengan Sistem Scoring Otomatis.</p>
+            </div>
+            <div class="semester-badge"><i class="fa fa-clock-o"></i> Sisa Waktu: 44 Menit 12 Detik</div>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-question-circle"></i> Soal No. 12 dari 50 (Penalaran Logika & Matematika Dasar)</h3>
+            </div>
+            <div class="panel-body">
+              <p style="font-size:15px;line-height:1.6;margin-bottom:18px;">
+                Jika semua mahasiswa Informatika menguasai logika komputasi, dan sebagian pengembang kecerdasan buatan adalah mahasiswa Informatika, maka kesimpulan yang paling tepat adalah:
+              </p>
+              <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px;">
+                <label style="display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--uph-gray-border);border-radius:6px;cursor:pointer;">
+                  <input type="radio" name="cbtOption" checked /> A. Sebagian pengembang kecerdasan buatan menguasai logika komputasi.
+                </label>
+                <label style="display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--uph-gray-border);border-radius:6px;cursor:pointer;">
+                  <input type="radio" name="cbtOption" /> B. Semua pengembang kecerdasan buatan adalah mahasiswa Informatika.
+                </label>
+                <label style="display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--uph-gray-border);border-radius:6px;cursor:pointer;">
+                  <input type="radio" name="cbtOption" /> C. Tidak ada pengembang kecerdasan buatan yang menguasai logika komputasi.
+                </label>
+              </div>
+              <button class="btn-action btn-gold" onclick="showToast('Jawaban CBT tersimpan. Lanjut ke Soal No. 13...')">Simpan & Soal Selanjutnya <i class="fa fa-arrow-right"></i></button>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "pmb-loa") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Letter of Acceptance (LoA) & SK Penetapan Beasiswa</h2>
+              <p>Dokumen resmi penetapan kelulusan calon mahasiswa Universitas Pelita Harapan.</p>
+            </div>
+            <a href="/portal/print/loa" target="_blank" class="btn-action btn-gold" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;"><i class="fa fa-print"></i> Cetak Official LoA (PDF)</a>
+          </div>
+
+          <div class="portal-panel" style="border: 2px solid var(--uph-navy);">
+            <div class="panel-body" style="padding:32px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--uph-navy);padding-bottom:18px;margin-bottom:24px;">
+                <img src="/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png" style="height:44px;filter:invert(1);" />
+                <div style="text-align:right;">
+                  <h3 style="font-size:16px;color:var(--uph-navy);font-family:'Montserrat',sans-serif;">SURAT KEPUTUSAN REKTOR UPH</h3>
+                  <p style="font-size:12px;color:#64748B;">Nomor: SK-REK/UPH/2026/08192-A</p>
+                </div>
+              </div>
+
+              <h2 style="font-size:18px;color:var(--uph-navy);text-align:center;margin-bottom:20px;font-family:'Montserrat',sans-serif;">
+                SURAT PENERIMAAN RESMI (LETTER OF ACCEPTANCE)
+              </h2>
+
+              <p style="font-size:13px;line-height:1.8;color:#334155;margin-bottom:16px;">
+                Dengan bangga Rektorat Universitas Pelita Harapan menyampaikan bahwa calon mahasiswa berikut:
+              </p>
+
+              <div style="background:#F8FAFC;padding:16px;border-radius:6px;font-size:13px;margin-bottom:20px;border-left:4px solid var(--uph-gold);">
+                <p><strong>Nama Lengkap:</strong> Clara Angelica</p>
+                <p><strong>Nomor Registrasi:</strong> PMB-2026-08192</p>
+                <p><strong>Fakultas:</strong> Fakultas Ilmu Komputer</p>
+                <p><strong>Program Studi:</strong> S1 Informatika</p>
+                <p><strong>Predikat Beasiswa:</strong> <span style="color:#C8102E;font-weight:700;">Gold Tier (50% Potongan Biaya Kuliah)</span></p>
+              </div>
+
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:28px;">
+                <div style="font-size:12px;color:#64748B;">
+                  <p><i class="fa fa-qrcode" style="font-size:36px;vertical-align:middle;margin-right:8px;color:var(--uph-navy);"></i> Verifikasi Dokumen: validasi.uph.edu/verify/SK-2026-08192</p>
+                </div>
+                <div style="text-align:center;">
+                  <p style="font-size:12px;color:#64748B;">Tangerang, 15 November 2026</p>
+                  <p style="font-size:13px;font-weight:700;color:var(--uph-navy);margin-top:28px;">Rektor Universitas Pelita Harapan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      // ==========================================
+      // 5. BAAK & BAUK WORKSPACES
+      // ==========================================
+      else if (activeTab === "baak-conflict") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Deteksi Konflik Ruang, Dosen, dan Jadwal Perkuliahan</h2>
+              <p>Engine otomatis pencegahan tabrakan jadwal (Collision Detection Matrix).</p>
+            </div>
+            <button class="btn-action btn-gold" onclick="showToast('Menjalankan algoritma pemindaian konflik seluruh jadwal...')"><i class="fa fa-search"></i> Pindai Seluruh Jadwal</button>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-shield"></i> Status Alokasi Ruang & Pengajar</h3>
+              <span class="badge badge-success"><i class="fa fa-check"></i> 0 Konflik Terdeteksi (Optimal)</span>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Hari & Waktu</th>
+                    <th>Ruang</th>
+                    <th>Mata Kuliah & Seksi</th>
+                    <th>Dosen Pengampu</th>
+                    <th>Status Validasi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Senin, 08:00 - 10:30</td>
+                    <td>D502 (Smart Lab)</td>
+                    <td>CS304 - Kecerdasan Buatan (Kelas A)</td>
+                    <td>Dr. Eng. Handi Kusuma, M.Kom.</td>
+                    <td><span class="badge badge-success">Tidak Ada Tabrakan</span></td>
+                  </tr>
+                  <tr>
+                    <td>Senin, 11:00 - 13:30</td>
+                    <td>D401</td>
+                    <td>CS309 - RPL Skala Besar (Kelas B)</td>
+                    <td>Prof. Dr. Ir. Edwin Sutanto, M.Sc.</td>
+                    <td><span class="badge badge-success">Tidak Ada Tabrakan</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "baak-pddikti") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Integrasi & Sinkronisasi PDDIKTI Neo Feeder</h2>
+              <p>Pelaporan resmi data aktivitas akademik nasional ke Pangkalan Data Pendidikan Tinggi.</p>
+            </div>
+            <button class="btn-action btn-gold" onclick="showToast('Menjalankan sinkronisasi Batch Feeder ke server Kemendikbudristek...')"><i class="fa fa-refresh"></i> Sinkronkan Semua Batch</button>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Tipe Data (Entitas)</th>
+                    <th>Jumlah Record</th>
+                    <th>Status Validasi Lokal</th>
+                    <th>Status Feeder Neo</th>
+                    <th>Waktu Sinkron Terakhir</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Data Mahasiswa Baru (PMB)</strong></td>
+                    <td class="tabular-nums">3,450 Mahasiswa</td>
+                    <td><span class="badge badge-success">100% Valid</span></td>
+                    <td><span class="badge badge-success">Tersinkron Penuh</span></td>
+                    <td>14 Nov 2026, 18:30 WIB</td>
+                    <td><button class="btn-action" onclick="showToast('Verifikasi checksum data mahasiswa...')">Cek Checksum</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>KRS & Aktivitas Kuliah (AKM)</strong></td>
+                    <td class="tabular-nums">14,890 Data KRS</td>
+                    <td><span class="badge badge-success">100% Valid</span></td>
+                    <td><span class="badge badge-success">Tersinkron Penuh</span></td>
+                    <td>14 Nov 2026, 19:15 WIB</td>
+                    <td><button class="btn-action" onclick="showToast('Mengecek status feeder AKM...')">Cek Checksum</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Nilai Akhir Semester (KHS)</strong></td>
+                    <td class="tabular-nums">58,200 Nilai</td>
+                    <td><span class="badge badge-warning">Review Kaprodi</span></td>
+                    <td><span class="badge badge-warning">Siap Dikirim</span></td>
+                    <td>Pending Lock Semester</td>
+                    <td><button class="btn-action btn-gold" onclick="showToast('Mengirim antrian data nilai...')">Kirim Batch</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "baak-billing") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Billing Engine & Rekonsiliasi Gateway Pembayaran (BAUK)</h2>
+              <p>Monitoring transaksi Virtual Account real-time dan persetujuan pengajuan cicilan.</p>
+            </div>
+            <button class="btn-action" onclick="showToast('Mengekspor Laporan Keuangan Semester...')"><i class="fa fa-file-excel-o"></i> Ekspor Laporan BAUK</button>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-head">
+              <h3><i class="fa fa-list"></i> Transaksi Pembayaran Virtual Account Masuk (Hari Ini)</h3>
+            </div>
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Ref ID</th>
+                    <th>NIM & Nama</th>
+                    <th>Nomor VA</th>
+                    <th>Bank Mitra</th>
+                    <th>Nominal</th>
+                    <th>Status Settlement</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>TRX-89104821</strong></td>
+                    <td>01021200045 - Jonathan Pratama</td>
+                    <td class="tabular-nums">8012801021200045</td>
+                    <td>BCA</td>
+                    <td class="tabular-nums">Rp 4.612.500</td>
+                    <td><span class="badge badge-success">Settled (Auto-Reconciled)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>TRX-89104822</strong></td>
+                    <td>01021200072 - Stephanie Widjaja</td>
+                    <td class="tabular-nums">8877001021200072</td>
+                    <td>Mandiri</td>
+                    <td class="tabular-nums">Rp 4.612.500</td>
+                    <td><span class="badge badge-success">Settled (Auto-Reconciled)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+
+      // ==========================================
+      // 6. EKSEKUTIF / REKTORAT WORKSPACES
+      // ==========================================
+      else if (activeTab === "exec-kpi") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Executive University KPI & Kesehatan Institusi</h2>
+              <p>Monitoring komprehensif kesehatan institusi, retensi mahasiswa, dan standar BAN-PT.</p>
+            </div>
+            <div class="semester-badge"><i class="fa fa-star"></i> Peringkat: Unggul Nasional</div>
+          </div>
+
+          <div class="bento-grid">
+            <div class="kpi-card">
+              <span class="kpi-label">Total Mahasiswa Aktif</span>
+              <span class="kpi-val tabular-nums">18,450</span>
+              <span class="kpi-sub"><i class="fa fa-users"></i> Rasio Dosen-Mahasiswa: 1 : 18.2</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Tingkat Retensi Mahasiswa</span>
+              <span class="kpi-val tabular-nums">97.4%</span>
+              <span class="kpi-sub"><i class="fa fa-arrow-up"></i> Drop Out Rate &lt; 1.2%</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Dana Hibah Penelitian (Riset)</span>
+              <span class="kpi-val tabular-nums">Rp 48.2 M</span>
+              <span class="kpi-sub"><i class="fa fa-book"></i> 412 Publikasi Terindeks Scopus</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-label">Waktu Tunggu Kerja Lulusan</span>
+              <span class="kpi-val tabular-nums">2.4 Bulan</span>
+              <span class="kpi-sub"><i class="fa fa-briefcase"></i> 89.2% Keselarasan Bidang Kerja</span>
+            </div>
+          </div>
+        `;
+      }
+      else if (activeTab === "exec-accreditation") {
+        ws.innerHTML = `
+          <div class="content-header">
+            <div class="content-title">
+              <h2>Kesiapan Akreditasi 9 Kriteria BAN-PT & LAM Perguruan Tinggi</h2>
+              <p>Proyeksi skor akreditasi institusi dan capaian standar mutu SPMI UPH.</p>
+            </div>
+            <span class="badge badge-success" style="font-size:14px;padding:6px 14px;">Proyeksi: UNGGUL (Skor: 378.4 / 400)</span>
+          </div>
+
+          <div class="portal-panel">
+            <div class="panel-body data-table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Kriteria</th>
+                    <th>Nama Standar Kriteria BAN-PT</th>
+                    <th>Bobot Kriteria</th>
+                    <th>Skor Mentah (1-4)</th>
+                    <th>Status Kesiapan Bukti</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Kriteria 1</strong></td>
+                    <td>Visi, Misi, Tujuan, dan Strategi Institusi</td>
+                    <td class="tabular-nums">5.0%</td>
+                    <td class="tabular-nums">3.90 / 4.00</td>
+                    <td><span class="badge badge-success">100% Bukti Lengkap</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Kriteria 2</strong></td>
+                    <td>Tata Pamong, Tata Kelola, dan Kerjasama Global</td>
+                    <td class="tabular-nums">10.0%</td>
+                    <td class="tabular-nums">3.85 / 4.00</td>
+                    <td><span class="badge badge-success">100% Bukti Lengkap</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Kriteria 3</strong></td>
+                    <td>Mahasiswa (Selektivitas PMB & Prestasi)</td>
+                    <td class="tabular-nums">10.0%</td>
+                    <td class="tabular-nums">3.80 / 4.00</td>
+                    <td><span class="badge badge-success">100% Bukti Lengkap</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Kriteria 4</strong></td>
+                    <td>Sumber Daya Manusia (Kualifikasi S3 & Jabatan Fungsional Dosen)</td>
+                    <td class="tabular-nums">15.0%</td>
+                    <td class="tabular-nums">3.75 / 4.00</td>
+                    <td><span class="badge badge-success">Memenuhi Unggul</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Kriteria 6</strong></td>
+                    <td>Pendidikan (Kurikulum OBE, RPS, & CPL Attainment)</td>
+                    <td class="tabular-nums">25.0%</td>
+                    <td class="tabular-nums">3.95 / 4.00</td>
+                    <td><span class="badge badge-success">Unggul Sangat Baik</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      }
+      else {
+        ws.innerHTML = `
+          <div class="portal-panel">
+            <div class="panel-head"><h3>Modul Operasional Aktif</h3></div>
+            <div class="panel-body"><p>Modul siap digunakan dengan data riil.</p></div>
+          </div>
+        `;
+      }
+    }
+
+    // Initialize with default Mahasiswa role
+    switchRole("mahasiswa");
+  </script>
+</body>
+</html>

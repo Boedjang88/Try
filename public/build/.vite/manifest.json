@@ -1,0 +1,54 @@
+{
+  "_vendor-CvIi2q49.js": {
+    "file": "assets/vendor-CvIi2q49.js",
+    "name": "vendor"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-Biq0_6ws.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BhlfAm3k.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-CvIi2q49.js"
+    ]
+  },
+  "resources/js/modules/cbt-engine.js": {
+    "file": "assets/cbt-engine-BFEyn8Z-.js",
+    "name": "cbt-engine",
+    "src": "resources/js/modules/cbt-engine.js",
+    "isEntry": true
+  },
+  "resources/js/modules/grade-spreadsheet.js": {
+    "file": "assets/grade-spreadsheet-DjsriuVj.js",
+    "name": "grade-spreadsheet",
+    "src": "resources/js/modules/grade-spreadsheet.js",
+    "isEntry": true
+  },
+  "resources/js/modules/krs-war-cart.js": {
+    "file": "assets/krs-war-cart-BEdQyU0O.js",
+    "name": "krs-war-cart",
+    "src": "resources/js/modules/krs-war-cart.js",
+    "isEntry": true
+  },
+  "resources/js/modules/qr-attendance.js": {
+    "file": "assets/qr-attendance-BR143ZNz.js",
+    "name": "qr-attendance",
+    "src": "resources/js/modules/qr-attendance.js",
+    "isEntry": true
+  },
+  "resources/js/modules/timetable-builder.js": {
+    "file": "assets/timetable-builder-BvRk9kiK.js",
+    "name": "timetable-builder",
+    "src": "resources/js/modules/timetable-builder.js",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,3459 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {},
+    "lang": "id-ID",
+    "unnamed_controls": 9,
+    "unnamed_examples": [
+      "button.uph-burger-menu",
+      "button.owl-dot",
+      "button.owl-dot",
+      "button.owl-dot",
+      "a.uph-footer__socmed__link"
+    ]
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/HelveticaNeue.woff2",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/icons/UPH.ttf",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/HelveticaNeue-Bold.woff2",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/HelveticaNeue-Light.woff2",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/HelveticaNeue-Medium.woff2"
+    ],
+    "images": [
+      {
+        "alt": "UPH Universitas Pelita Harapan",
+        "h": 91,
+        "src": "https://www.uph.edu/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png?x81484",
+        "w": 300
+      },
+      {
+        "alt": "Membentuk Pemimpin dan Membangun Perubahan",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201864%201230'%3E%3C/svg%3E",
+        "w": 227
+      },
+      {
+        "alt": "Membentuk Pemimpin dan Membangun Perubahan",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201864%201230'%3E%3C/svg%3E",
+        "w": 227
+      },
+      {
+        "alt": "Membangun generasi dengan pendidikan kelas dunia dan fakultas beragam untuk mewujudkan masa depan",
+        "h": 1246,
+        "src": "https://www.uph.edu/wp-content/uploads/2025/02/Hero-Banner-5-min.jpg?x81484",
+        "w": 1876
+      },
+      {
+        "alt": "Membangun generasi dengan pendidikan kelas dunia dan fakultas beragam untuk mewujudkan masa depan",
+        "h": 1246,
+        "src": "https://www.uph.edu/wp-content/uploads/2025/02/Hero-Banner-5-min.jpg?x81484",
+        "w": 1876
+      },
+      {
+        "alt": "Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan.",
+        "h": 1708,
+        "src": "https://www.uph.edu/wp-content/uploads/2025/01/banner-scaled-min.jpg?x81484",
+        "w": 2560
+      },
+      {
+        "alt": "Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan.",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20992%201240'%3E%3C/svg%3E",
+        "w": 120
+      },
+      {
+        "alt": "Membentuk Pemimpin dan Membangun Perubahan",
+        "h": 1230,
+        "src": "https://www.uph.edu/wp-content/uploads/2025/02/Hero-Banner-2-min.jpg?x81484",
+        "w": 1864
+      },
+      {
+        "alt": "Membentuk Pemimpin dan Membangun Perubahan",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201864%201230'%3E%3C/svg%3E",
+        "w": 227
+      },
+      {
+        "alt": "Membangun generasi dengan pendidikan kelas dunia dan fakultas beragam untuk mewujudkan masa depan",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201876%201246'%3E%3C/svg%3E",
+        "w": 226
+      },
+      {
+        "alt": "Membangun generasi dengan pendidikan kelas dunia dan fakultas beragam untuk mewujudkan masa depan",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201876%201246'%3E%3C/svg%3E",
+        "w": 226
+      },
+      {
+        "alt": "Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan.",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202560%201708'%3E%3C/svg%3E",
+        "w": 225
+      },
+      {
+        "alt": "Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan.",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20992%201240'%3E%3C/svg%3E",
+        "w": 120
+      },
+      {
+        "alt": "Membentuk Pemimpin dan Membangun Perubahan",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201864%201230'%3E%3C/svg%3E",
+        "w": 227
+      },
+      {
+        "alt": "Membentuk Pemimpin dan Membangun Perubahan",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201864%201230'%3E%3C/svg%3E",
+        "w": 227
+      },
+      {
+        "alt": "Memelopori Program Anestesiologi & Terapi Intensif di Indonesia",
+        "h": 360,
+        "src": "https://www.uph.edu/wp-content/uploads/2025/02/Highlight-UPH-3-e1750231113335.jpg?x81484",
+        "w": 640
+      },
+      {
+        "alt": "Desain Komunikasi Visual: Desain Grafis",
+        "h": 284,
+        "src": "https://www.uph.edu/wp-content/uploads/2024/08/Visual-Communication-Design-featured.jpg?x81484",
+        "w": 378
+      },
+      {
+        "alt": "Kedokteran",
+        "h": 284,
+        "src": "https://www.uph.edu/wp-content/uploads/2024/08/Medicine-1-e1750234725840.jpg?x81484",
+        "w": 378
+      },
+      {
+        "alt": "Bisnis dan Kewirausahaan Pangan",
+        "h": 283,
+        "src": "https://www.uph.edu/wp-content/uploads/2024/08/Food-Business-Entrepreneurship-e1750145043477.jpg?x81484",
+        "w": 378
+      },
+      {
+        "alt": "Manajemen dan Analitika Rantai Pasok",
+        "h": 284,
+        "src": "https://www.uph.edu/wp-content/uploads/2024/08/Supply-Chain-Management-Analytics-e1750145343778.jpg?x81484",
+        "w": 378
+      },
+      {
+        "alt": "Hukum Bisnis",
+        "h": 284,
+        "src": "https://www.uph.edu/wp-content/uploads/2024/07/Business-Law-e1750234879827.jpg?x81484",
+        "w": 378
+      },
+      {
+        "alt": "Marketing, Retail & Innovation",
+        "h": 284,
+        "src": "https://www.uph.edu/wp-content/uploads/2024/08/Marketing-Retail-Innovation-e1750235149578.jpg?x81484",
+        "w": 378
+      },
+      {
+        "alt": "Supply Chain: Pengertian, Komponen, dan Perannya di Era Digital",
+        "h": 460,
+        "src": "https://www.uph.edu/wp-content/uploads/2026/10/Adv-News-Supply-Chain.jpg?x81484",
+        "w": 818
+      },
+      {
+        "alt": "ESG: Pengertian, 3 Pilar, Contoh, dan Peluang Kariernya",
+        "h": 460,
+        "src": "https://www.uph.edu/wp-content/uploads/2026/10/Adv-ESG-1.jpg?x81484",
+        "w": 818
+      },
+      {
+        "alt": "Apa Itu IoT (Internet of Things)? Pengertian, Cara Kerja, dan Contohnya",
+        "h": 457,
+        "src": "https://www.uph.edu/wp-content/uploads/2026/10/Internet-of-Things.jpg?x81484",
+        "w": 813
+      },
+      {
+        "alt": "Jurusan Data Science dan Data Analytics: Panduan Lengkap untuk Calon Mahasiswa",
+        "h": 457,
+        "src": "https://www.uph.edu/wp-content/uploads/2026/10/Data-Analytics.jpg?x81484",
+        "w": 813
+      },
+      {
+        "alt": "Wahyu Wiwoho",
+        "h": 240,
+        "src": "https://www.uph.edu/wp-content/uploads/2025/02/Wahyu-Wiwoho-e1750233689215.jpeg?x81484",
+        "w": 240
+      },
+      {
+        "alt": "Cantika Abigail",
+        "h": 250,
+        "src": "https://www.uph.edu/wp-content/uploads/2025/02/Cantika-Abigail-1-e1750230546927.jpg?x81484",
+        "w": 250
+      },
+      {
+        "alt": "Sandiaga Uno",
+        "h": 150,
+        "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20876%20776'%3E%3C/svg%3E",
+        "w": 169
+      },
+      {
+        "alt": "Anak Tekpang kuliahnya ngapain aja sih? 🤔 #UPH #UPHImpactsLives #UniversitasPelitaHarapan",
+        "h": 1280,
+        "src": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/891215265_18643603834042542_8104080736972418974_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Ja3c8vTL23oQ7kNvwF5gCQl&_nc_oc=Adq19PcpwJAJfxet1PQKkXV0-izB9T3e2Y6j4lXgEhALWYIhRUDddhM8TZmSUBHG4ro&_nc_zt=23&_nc_ht=instagram.fbdo6-2.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQIofNR5nC9CdLnEBE4QWxRm5c4UpkrUBfJCDNpj2yrUW-kpCJwr5yIOjpLZbUxwlk4tOMAPHpsCSg&oh=00_AQTBdA_vwzyurGmbir8GoopFavlfCDR_rplXA10F_KNcHA&oe=6AF85AFF",
+        "w": 720
+      },
+      {
+        "alt": "tap to see UPH in colors 👆 #UPH #UPHImpactsLives #UniversitasPelitaHarapan",
+        "h": 1280,
+        "src": "https://instagram.fbdo6-3.fna.fbcdn.net/v/t51.82787-15/870731506_18641097448042542_3717639269563561975_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qy_GsGlTsfUQ7kNvwH16jtz&_nc_oc=AdrHvZ_P2U2bxfov_PKFyTtVzPOZjqQ68wPtiQci47Jf9x_luvWf0nprTc9qPOhmg38&_nc_zt=23&_nc_ht=instagram.fbdo6-3.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQJDOt9Z2aARttua6T3FsrHQPRChHv6QgKs3r3ps4yEj_klbej7YR6TBMfKACJO8GQft1VtQOucL1Q&oh=00_AQTCB-v9lgBJw-M1QUMzwGg5LUQ0FN0l8ZXZRjYV6-Ll3A&oe=6AF85A41",
+        "w": 720
+      },
+      {
+        "alt": "don’t stop to chase for your dreams here at UPH ✨ #UPH #UPHImpactsLives #UniversitasPelitaHarapan",
+        "h": 1280,
+        "src": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/870985915_18640383976042542_1809676227889335019_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NoWHU3eWK4oQ7kNvwG8Fk5o&_nc_oc=AdrPLgVgFWfx2xjhwsFsGKS6PvdZBjmTa4m0iHtFS25a_OnIIKBEhQnBrCTQ0XJpkV0&_nc_zt=23&_nc_ht=instagram.fbdo6-2.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQLVvB_30Pj_XjoAw5drEavpLeC9UZO0a0EIiOfwMkYuvt276xwyZMxofcJWmNwBieYTkgQ_sAoJmA&oh=00_AQTzHoXLf33EmhjYhb9uqUVxvdfn__lVRZTHF-S6l4PNjw&oe=6AF854E1",
+        "w": 720
+      },
+      {
+        "alt": "FROM LETTER TO LETTER, LET’S THINK TOGETHER. One letter, endless questions. What makes a letter a letter? How do its for",
+        "h": 1136,
+        "src": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/866565035_18639963295042542_1223957603252881535_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PrJ8VcdIe4QQ7kNvwHUSWxi&_nc_oc=AdpoD1Jz7CfuRjnnOboDFVyjbOaxhkz9bz2F0LtQPVeIghQb0YhG0rphu6yYS1SM6ww&_nc_zt=23&_nc_ht=instagram.fbdo6-2.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQK_x5w_rv3g-LGbPknrW_CactiUR5Ok7i6xlnn6E9alprRUg5Jd36cmuXxJ20MPhb_8Lw0bGaUlrw&oh=00_AQSD80l86wuvtPW9EQJG10ma48_ojtZKIVpyubAqg8kIQA&oe=6AF8517B",
+        "w": 912
+      },
+      {
+        "alt": "On October 14, 2026, Universitas Pelita Harapan (UPH) welcomed Xiamen University, China, for the signing of a Memorandum",
+        "h": 1856,
+        "src": "https://instagram.fcgk4-4.fna.fbcdn.net/v/t51.82787-15/852830492_18637635208042542_8605466142742135462_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=s-olHUgtQSYQ7kNvwHsINuN&_nc_oc=AdrWgyPEolF1W85nc6drOavzsyCO6G7Ul3UEPgo-C8njIctJ7ksHTEDhu47ySl3_zuw&_nc_zt=23&_nc_ht=instagram.fcgk4-4.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQJXGPbwY0urqea3KaPw6rIIF5MkVuNsPjHrsv7yS6l67dvOtk97cLeRTGNqqGxTFaEcH04Nd7yrFA&oh=00_AQTa3SNIAYkLBZsbAFKYykeomxALN1yzJyY9GyT28iKebg&oe=6AF871D1",
+        "w": 1485
+      },
+      {
+        "alt": "UPH students, here’s a reward for you 🏅 #UPH #UPHImpactsLives #UniversitasPelitaHarapan",
+        "h": 1344,
+        "src": "https://instagram.fcgk4-4.fna.fbcdn.net/v/t51.82787-15/848014973_18635725384042542_2835523322476596164_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=R0cj7R0khLoQ7kNvwG0-hYs&_nc_oc=Adqvjcgb3FL_8lu0S8fVyYXly-L1t2MuWFlZ16jKMjLQ3hJ18NDfBtpvkunKHJiMp0I&_nc_zt=23&_nc_ht=instagram.fcgk4-4.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQITWg-543T4uxgLD_hl5DZDlvwEi7dRS_fNh3vFPkB8PD2ytpV9MDAj2CRDPS1jWzTQJVyxyWRITw&oh=00_AQQSs-DnEFyMtqdE7qsuTHASB5l971xNG_RmZEUW092WwQ&oe=6AF86AAD",
+        "w": 1088
+      },
+      {
+        "alt": "UPH Universitas Pelita Harapan",
+        "h": 91,
+        "src": "https://www.uph.edu/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png?x81484",
+        "w": 300
+      }
+    ],
+    "inline_scripts": 17,
+    "requests": [
+      {
+        "bytes": 15477,
+        "type": "link",
+        "url": "https://www.uph.edu/wp-includes/css/dist/block-library/style.min.css"
+      },
+      {
+        "bytes": 606,
+        "type": "link",
+        "url": "https://www.uph.edu/wp-content/plugins/carousel-block/build/carousel-legacy/style-index.css"
+      },
+      {
+        "bytes": 3184,
+        "type": "link",
+        "url": "https://www.uph.edu/wp-content/plugins/simple-urls/admin/assets/css/lasso-lite.css"
+      },
+      {
+        "bytes": 842,
+        "type": "link",
+        "url": "https://www.uph.edu/wp-content/plugins/cf7-conditional-fields/style.css"
+      },
+      {
+        "bytes": 30668,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-includes/js/jquery/jquery.min.js"
+      },
+      {
+        "bytes": 487,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js"
+      },
+      {
+        "bytes": 5172,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-includes/js/jquery/jquery-migrate.min.js"
+      },
+      {
+        "bytes": 5931,
+        "type": "link",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js"
+      },
+      {
+        "bytes": 41177,
+        "type": "link",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/css/app.min.css"
+      },
+      {
+        "bytes": 102250,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/js/vendor.min.js"
+      },
+      {
+        "bytes": 9910,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/js/app.min.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://js.codedrink.com/lasso-performance.min.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://js.lasso.link/lasso-performance.min.js"
+      },
+      {
+        "bytes": 68396,
+        "type": "script",
+        "url": "https://www.uph.edu/id/js/snippet.min.js"
+      },
+      {
+        "bytes": 68396,
+        "type": "script",
+        "url": "https://www.uph.edu/id/"
+      },
+      {
+        "bytes": 1948,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-includes/js/dist/hooks.min.js"
+      },
+      {
+        "bytes": 3967,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-includes/js/dist/i18n.min.js"
+      },
+      {
+        "bytes": 3803,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-content/plugins/contact-form-7/includes/swv/js/index.js"
+      },
+      {
+        "bytes": 4565,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-content/plugins/contact-form-7/includes/js/index.js"
+      },
+      {
+        "bytes": 9036,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-content/plugins/cf7-conditional-fields/js/scripts.js"
+      },
+      {
+        "bytes": 3116,
+        "type": "script",
+        "url": "https://www.uph.edu/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"
+      },
+      {
+        "bytes": 114549,
+        "type": "script",
+        "url": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "bytes": 624,
+        "type": "link",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/js/data/manifest.json"
+      },
+      {
+        "bytes": 135436,
+        "type": "css",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/HelveticaNeue.woff2"
+      },
+      {
+        "bytes": 347795,
+        "type": "css",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/bg/bg-noise.svg"
+      },
+      {
+        "bytes": 3749,
+        "type": "css",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/icons/UPH.ttf"
+      },
+      {
+        "bytes": 138999,
+        "type": "css",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/HelveticaNeue-Bold.woff2"
+      },
+      {
+        "bytes": 62784,
+        "type": "css",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/HelveticaNeue-Light.woff2"
+      },
+      {
+        "bytes": 74007,
+        "type": "css",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/fonts/HelveticaNeue-Medium.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://graph.instagram.com/me/media"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://o51581.ingest.us.sentry.io/api/4508838724501504/envelope/"
+      },
+      {
+        "bytes": 9057,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png"
+      },
+      {
+        "bytes": 118441,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2025/02/Hero-Banner-5-min.jpg"
+      },
+      {
+        "bytes": 263566,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2025/01/banner-scaled-min.jpg"
+      },
+      {
+        "bytes": 29800,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2025/02/Highlight-UPH-3-e1750231113335.jpg"
+      },
+      {
+        "bytes": 122313,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2025/02/Hero-Banner-2-min.jpg"
+      },
+      {
+        "bytes": 64735,
+        "type": "script",
+        "url": "https://connect.facebook.net/signals/plugins/openbridge3.js"
+      },
+      {
+        "bytes": 154317,
+        "type": "script",
+        "url": "https://connect.facebook.net/signals/config/1142888552481355"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/880408228/"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://www.google.com/rmkt/collect/880408228/"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://www.google.com/ccm/collect"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://ad.doubleclick.net/ccm/s/collect"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://www.googletagmanager.com/gtag/js"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/880408228/"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/969965463/"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://www.google.com/rmkt/collect/969965463/"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://www.google.com/ccm/collect"
+      },
+      {
+        "bytes": 206891,
+        "type": "img",
+        "url": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/891215265_18643603834042542_8104080736972418974_n.jpg"
+      },
+      {
+        "bytes": 287186,
+        "type": "img",
+        "url": "https://instagram.fbdo6-3.fna.fbcdn.net/v/t51.82787-15/870731506_18641097448042542_3717639269563561975_n.jpg"
+      },
+      {
+        "bytes": 164480,
+        "type": "img",
+        "url": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/870985915_18640383976042542_1809676227889335019_n.jpg"
+      },
+      {
+        "bytes": 421744,
+        "type": "img",
+        "url": "https://instagram.fcgk4-4.fna.fbcdn.net/v/t51.82787-15/852830492_18637635208042542_8605466142742135462_n.jpg"
+      },
+      {
+        "bytes": 103754,
+        "type": "img",
+        "url": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/866565035_18639963295042542_1223957603252881535_n.jpg"
+      },
+      {
+        "bytes": 78030,
+        "type": "img",
+        "url": "https://instagram.fcgk4-4.fna.fbcdn.net/v/t51.82787-15/848014973_18635725384042542_2835523322476596164_n.jpg"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://analytics.google.com/g/collect"
+      },
+      {
+        "bytes": 0,
+        "type": "beacon",
+        "url": "https://stats.g.doubleclick.net/g/collect"
+      },
+      {
+        "bytes": 342,
+        "type": "img",
+        "url": "https://www.google.co.id/ads/ga-audiences"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/969965463/"
+      },
+      {
+        "bytes": 8205,
+        "type": "other",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/favicon.ico"
+      },
+      {
+        "bytes": 5942,
+        "type": "other",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/android-icon-144x144.png"
+      },
+      {
+        "bytes": 588715,
+        "type": "css",
+        "url": "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/bg/bg-noise-mobile.svg"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2025/02/Hero-Banner-5-min.jpg"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2025/01/banner-mobile-min.jpg"
+      },
+      {
+        "bytes": 17280,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2024/08/Medicine-1-e1750234725840.jpg"
+      },
+      {
+        "bytes": 30553,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2024/08/Visual-Communication-Design-featured.jpg"
+      },
+      {
+        "bytes": 35522,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2024/08/Food-Business-Entrepreneurship-e1750145043477.jpg"
+      },
+      {
+        "bytes": 20222,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2024/07/Business-Law-e1750234879827.jpg"
+      },
+      {
+        "bytes": 29602,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2024/08/Supply-Chain-Management-Analytics-e1750145343778.jpg"
+      },
+      {
+        "bytes": 18801,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2024/08/Marketing-Retail-Innovation-e1750235149578.jpg"
+      },
+      {
+        "bytes": 97401,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2026/10/Adv-News-Supply-Chain.jpg"
+      },
+      {
+        "bytes": 80602,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2026/10/Adv-ESG-1.jpg"
+      },
+      {
+        "bytes": 75175,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2026/10/Data-Analytics.jpg"
+      },
+      {
+        "bytes": 88454,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2026/10/Internet-of-Things.jpg"
+      },
+      {
+        "bytes": 9412,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2025/02/Wahyu-Wiwoho-e1750233689215.jpeg"
+      },
+      {
+        "bytes": 9136,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2025/02/Cantika-Abigail-1-e1750230546927.jpg"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://www.uph.edu/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png"
+      }
+    ],
+    "scripts": [
+      "https://www.googletagmanager.com/gtag/js?id=G-HDFHEX3LDS&cx=c&gtm=4e6b90h2",
+      "https://www.googletagmanager.com/gtag/js?id=AW-969965463&cx=c&gtm=4e6b61",
+      "https://www.googletagmanager.com/gtag/js?id=UA-124593360-1&cx=c&gtm=4e6b61",
+      "https://connect.facebook.net/signals/config/1142888552481355?v=2.9.439&r=stable&domain=www.uph.edu&hme=1f127d11ce7bba675ee077e129c6ec7e07038113ad3e920301e60f2f865dc776&ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C111%2C150%2C177%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C116%2C162%2C72%2C186%2C110%2C185%2C212%2C264%2C37%2C84%2C284%2C283%2C282%2C14%2C25%2C28%2C40%2C62%2C118%2C68%2C10%2C73%2C112%2C113%2C114%2C120%2C145%2C38%2C36%2C147%2C148%2C149%2C144%2C143%2C173%2C86%2C176%2C174%2C175%2C57%2C69%2C67%2C138%2C19%2C180%2C52%2C334%2C335%2C336%2C333%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C164%2C87%2C127%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C125%2C161%2C165%2C53%2C126%2C29%2C26%2C134%2C79%2C43%2C167%2C166%2C168%2C158%2C156%2C30%2C42%2C66%2C124%2C179%2C80%2C21%2C129%2C93%2C76%2C23%2C97%2C98%2C131%2C96%2C152%2C151%2C155%2C109%2C178%2C181%2C41%2C350%2C372%2C257%2C239%2C70%2C240%2C238%2C375%2C366%2C59%2C258%2C122%2C146%2C92%2C136%2C61%2C54%2C56%2C128%2C135%2C141%2C140%2C65%2C74%2C169%2C88%2C89%2C130%2C44%2C39%2C60%2C63%2C115%2C183%2C1%2C139%2C16%2C137%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C133%2C101%2C100%2C188%2C189%2C106%2C107%2C9%2C117%2C187%2C58%2C159%2C99%2C91%2C81%2C132%2C121%2C170%2C50%2C160%2C0%2C94%2C153%2C157%2C171%2C45%2C123%2C13%2C190",
+      "https://connect.facebook.net/signals/plugins/openbridge3.js?v=2.9.439",
+      "https://connect.facebook.net/en_US/fbevents.js",
+      "https://www.uph.edu/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?x81484&ver=484900",
+      "https://www.uph.edu/wp-includes/js/jquery/jquery.min.js?x81484&ver=3.7.1",
+      "https://www.uph.edu/wp-includes/js/jquery/jquery-migrate.min.js?x81484&ver=3.4.1",
+      "https://www.googletagmanager.com/gtag/js?id=UA-124593360-1",
+      "https://www.googletagmanager.com/gtag/js?id=AW-880408228",
+      "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/880408228/?random=1794281450140&cv=11&fst=1794281450140&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b61z8d_AW-880408228za208xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034~123814185&u_w=800&u_h=600&url=https%3A%2F%2Fwww.uph.edu%2Fid%2F&rcb=15&frm=0&tiba=Universitas%20Pelita%20Harapan&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=818444479.1794281450&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.38%7CChromium%3B157.0.8103.38&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+      "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/969965463/?random=1794281450741&cv=11&fst=1794281450741&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b61z8d_AW-969965463za208xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118897920~118897930~120213116~120385423~120412526~120420414~120469145~120469153~121191153~121246026~121246034~123814185&u_w=800&u_h=600&url=https%3A%2F%2Fwww.uph.edu%2Fid%2F&rcb=7&frm=0&tiba=Universitas%20Pelita%20Harapan&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=818444479.1794281450&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.38%7CChromium%3B157.0.8103.38&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/js/vendor.min.js?x81484",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/js/app.min.js?x81484",
+      "https://js.codedrink.com/lasso-performance.min.js?ver=139.20261110",
+      "https://js.lasso.link/lasso-performance.min.js?ver=139.20261110",
+      "https://www.uph.edu/id/js/snippet.min.js?x81484&ver=139.20261110",
+      "https://www.uph.edu/id/?abbb8ea4eca5d4fc9ea3f059f9d0fc93=1&ver=139.20261110",
+      "https://www.uph.edu/wp-includes/js/dist/hooks.min.js?x81484&ver=4d63a3d491d11ffd8ac6",
+      "https://www.uph.edu/wp-includes/js/dist/i18n.min.js?x81484&ver=5e580eb46a90c2b997e6",
+      "https://www.uph.edu/wp-content/plugins/contact-form-7/includes/swv/js/index.js?x81484&ver=6.1.2",
+      "https://www.uph.edu/wp-content/plugins/contact-form-7/includes/js/index.js?x81484&ver=6.1.2",
+      "https://www.uph.edu/wp-content/plugins/cf7-conditional-fields/js/scripts.js?x81484&ver=2.6.4",
+      "https://www.uph.edu/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js?x81484"
+    ],
+    "stylesheets": [
+      "https://www.uph.edu/wp-includes/css/dist/block-library/style.min.css?x81484&ver=6.7.2",
+      "https://www.uph.edu/wp-content/plugins/carousel-block/build/carousel-legacy/style-index.css?x81484&ver=2.0.5",
+      "https://www.uph.edu/wp-content/plugins/simple-urls/admin/assets/css/lasso-lite.css?x81484&ver=1761283143",
+      "https://www.uph.edu/wp-content/plugins/cf7-conditional-fields/style.css?x81484&ver=2.6.4",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/css/app.min.css?x81484"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 1,
+      "px": 320,
+      "query": "max-width 320px"
+    },
+    {
+      "count": 1,
+      "px": 350,
+      "query": "max-width 350px"
+    },
+    {
+      "count": 1,
+      "px": 360,
+      "query": "max-width 360px"
+    },
+    {
+      "count": 1,
+      "px": 375,
+      "query": "max-width 375px"
+    },
+    {
+      "count": 1,
+      "px": 400,
+      "query": "max-width 400px"
+    },
+    {
+      "count": 1,
+      "px": 576,
+      "query": "max-width 576px"
+    },
+    {
+      "count": 7,
+      "px": 600,
+      "query": "min-width 600px"
+    },
+    {
+      "count": 3,
+      "px": 600,
+      "query": "max-width 600px"
+    },
+    {
+      "count": 6,
+      "px": 768,
+      "query": "max-width 768px"
+    },
+    {
+      "count": 1,
+      "px": 781,
+      "query": "max-width 781px"
+    },
+    {
+      "count": 6,
+      "px": 782,
+      "query": "min-width 782px"
+    },
+    {
+      "count": 2,
+      "px": 992,
+      "query": "max-width 992px"
+    },
+    {
+      "count": 1,
+      "px": 1050,
+      "query": "max-width 1050px"
+    },
+    {
+      "count": 1,
+      "px": 1200,
+      "query": "max-width 1200px"
+    },
+    {
+      "count": 1,
+      "px": 1240,
+      "query": "max-width 1240px"
+    },
+    {
+      "count": 1,
+      "px": 1264,
+      "query": "max-width 1264px"
+    },
+    {
+      "count": 1,
+      "px": 1280,
+      "query": "max-width 1280px"
+    },
+    {
+      "count": 1,
+      "px": 1440,
+      "query": "max-width 1440px"
+    },
+    {
+      "count": 1,
+      "px": 1540,
+      "query": "max-width 1540px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 9,
+        "value": "#ffffff"
+      },
+      {
+        "count": 5,
+        "value": "#000000"
+      },
+      {
+        "count": 4,
+        "value": "#f3f3f3"
+      },
+      {
+        "count": 2,
+        "value": "#d9d9d9"
+      },
+      {
+        "count": 2,
+        "value": "#d2d2d2"
+      },
+      {
+        "count": 1,
+        "value": "#3e3e3e"
+      }
+    ],
+    "css_variables": {
+      "--swiper-navigation-size": "44px",
+      "--swiper-theme-color": "#007aff",
+      "--wp--preset--aspect-ratio--16-9": "16/9",
+      "--wp--preset--aspect-ratio--2-3": "2/3",
+      "--wp--preset--aspect-ratio--3-2": "3/2",
+      "--wp--preset--aspect-ratio--3-4": "3/4",
+      "--wp--preset--aspect-ratio--4-3": "4/3",
+      "--wp--preset--aspect-ratio--9-16": "9/16",
+      "--wp--preset--aspect-ratio--square": "1",
+      "--wp--preset--color--black": "#000000",
+      "--wp--preset--color--cyan-bluish-gray": "#abb8c3",
+      "--wp--preset--color--light-green-cyan": "#7bdcb5",
+      "--wp--preset--color--luminous-vivid-amber": "#fcb900",
+      "--wp--preset--color--luminous-vivid-orange": "#ff6900",
+      "--wp--preset--color--pale-cyan-blue": "#8ed1fc",
+      "--wp--preset--color--pale-pink": "#f78da7",
+      "--wp--preset--color--vivid-cyan-blue": "#0693e3",
+      "--wp--preset--color--vivid-green-cyan": "#00d084",
+      "--wp--preset--color--vivid-purple": "#9b51e0",
+      "--wp--preset--color--vivid-red": "#cf2e2e",
+      "--wp--preset--color--white": "#ffffff",
+      "--wp--preset--font-size--huge": "42px",
+      "--wp--preset--font-size--large": "36px",
+      "--wp--preset--font-size--medium": "20px",
+      "--wp--preset--font-size--normal": "16px",
+      "--wp--preset--font-size--small": "13px",
+      "--wp--preset--font-size--x-large": "42px",
+      "--wp--preset--gradient--blush-bordeaux": "linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%)",
+      "--wp--preset--gradient--blush-light-purple": "linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%)",
+      "--wp--preset--gradient--cool-to-warm-spectrum": "linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 8",
+      "--wp--preset--gradient--electric-grass": "linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%)",
+      "--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan": "linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%)",
+      "--wp--preset--gradient--luminous-dusk": "linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%)",
+      "--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange": "linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%)",
+      "--wp--preset--gradient--luminous-vivid-orange-to-vivid-red": "linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%)",
+      "--wp--preset--gradient--midnight": "linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%)",
+      "--wp--preset--gradient--pale-ocean": "linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%)",
+      "--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray": "linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%)",
+      "--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+      "--wp--preset--shadow--crisp": "6px 6px 0px rgba(0, 0, 0, 1)",
+      "--wp--preset--shadow--deep": "12px 12px 50px rgba(0, 0, 0, 0.4)",
+      "--wp--preset--shadow--natural": "6px 6px 9px rgba(0, 0, 0, 0.2)",
+      "--wp--preset--shadow--outlined": "6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1)",
+      "--wp--preset--shadow--sharp": "6px 6px 0px rgba(0, 0, 0, 0.2)",
+      "--wp--preset--spacing--20": "0.44rem",
+      "--wp--preset--spacing--30": "0.67rem",
+      "--wp--preset--spacing--40": "1rem",
+      "--wp--preset--spacing--50": "1.5rem",
+      "--wp--preset--spacing--60": "2.25rem",
+      "--wp--preset--spacing--70": "3.38rem",
+      "--wp--preset--spacing--80": "5.06rem"
+    },
+    "font_faces": [
+      {
+        "family": "FontAwesome",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "normal"
+      },
+      {
+        "family": "swiper-icons",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Helvetica Neue",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Helvetica Neue",
+        "status": "unloaded",
+        "style": "italic",
+        "weight": "700"
+      },
+      {
+        "family": "Helvetica Neue",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Helvetica Neue",
+        "status": "unloaded",
+        "style": "italic",
+        "weight": "500"
+      },
+      {
+        "family": "Helvetica Neue",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Helvetica Neue",
+        "status": "unloaded",
+        "style": "italic",
+        "weight": "400"
+      },
+      {
+        "family": "Helvetica Neue",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "300"
+      },
+      {
+        "family": "Helvetica Neue",
+        "status": "unloaded",
+        "style": "italic",
+        "weight": "300"
+      },
+      {
+        "family": "UPH",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 21,
+        "value": "17px"
+      },
+      {
+        "count": 14,
+        "value": "20px"
+      },
+      {
+        "count": 11,
+        "value": "18px"
+      },
+      {
+        "count": 9,
+        "value": "15px"
+      },
+      {
+        "count": 8,
+        "value": "14px"
+      },
+      {
+        "count": 6,
+        "value": "38px"
+      },
+      {
+        "count": 2,
+        "value": "12px"
+      },
+      {
+        "count": 2,
+        "value": "16px"
+      },
+      {
+        "count": 2,
+        "value": "22px"
+      },
+      {
+        "count": 1,
+        "value": "35px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 59,
+        "value": "400"
+      },
+      {
+        "count": 7,
+        "value": "700"
+      },
+      {
+        "count": 6,
+        "value": "300"
+      },
+      {
+        "count": 4,
+        "value": "500"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 76,
+        "value": "\"Helvetica Neue\", sans-serif"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 8,
+        "value": "1190px"
+      },
+      {
+        "count": 2,
+        "value": "280px"
+      },
+      {
+        "count": 2,
+        "value": "200px"
+      },
+      {
+        "count": 1,
+        "value": "600px"
+      },
+      {
+        "count": 1,
+        "value": "375px"
+      },
+      {
+        "count": 1,
+        "value": "248px"
+      }
+    ],
+    "radii": [
+      {
+        "count": 16,
+        "value": "5px"
+      },
+      {
+        "count": 7,
+        "value": "8px"
+      },
+      {
+        "count": 4,
+        "value": "10px"
+      },
+      {
+        "count": 3,
+        "value": "1px"
+      },
+      {
+        "count": 2,
+        "value": "50%"
+      },
+      {
+        "count": 2,
+        "value": "32px"
+      },
+      {
+        "count": 1,
+        "value": "100px"
+      }
+    ],
+    "shadows": [
+      {
+        "count": 3,
+        "value": "rgba(0, 0, 0, 0.1) 0px 2px 5px 0px"
+      }
+    ],
+    "spacing": [
+      {
+        "count": 30,
+        "value": "14px"
+      },
+      {
+        "count": 20,
+        "value": "10px"
+      },
+      {
+        "count": 19,
+        "value": "12px"
+      },
+      {
+        "count": 12,
+        "value": "24px"
+      },
+      {
+        "count": 11,
+        "value": "70px"
+      },
+      {
+        "count": 10,
+        "value": "8px"
+      },
+      {
+        "count": 6,
+        "value": "30px"
+      },
+      {
+        "count": 6,
+        "value": "282px"
+      },
+      {
+        "count": 6,
+        "value": "22px"
+      },
+      {
+        "count": 4,
+        "value": "13px"
+      },
+      {
+        "count": 4,
+        "value": "7px"
+      },
+      {
+        "count": 4,
+        "value": "28px"
+      },
+      {
+        "count": 3,
+        "value": "20px"
+      },
+      {
+        "count": 3,
+        "value": "36px"
+      },
+      {
+        "count": 3,
+        "value": "16px"
+      },
+      {
+        "count": 3,
+        "value": "180px"
+      },
+      {
+        "count": 3,
+        "value": "5px"
+      },
+      {
+        "count": 3,
+        "value": "88px"
+      },
+      {
+        "count": 3,
+        "value": "34px"
+      },
+      {
+        "count": 2,
+        "value": "17px"
+      },
+      {
+        "count": 2,
+        "value": "18px"
+      },
+      {
+        "count": 2,
+        "value": "48px"
+      },
+      {
+        "count": 2,
+        "value": "32px"
+      },
+      {
+        "count": 2,
+        "value": "15px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 39,
+        "value": "#ffffff"
+      },
+      {
+        "count": 34,
+        "value": "#000000"
+      },
+      {
+        "count": 2,
+        "value": "#b6b6b6"
+      },
+      {
+        "count": 1,
+        "value": "#888888"
+      }
+    ]
+  },
+  "forms": [
+    {
+      "action": "https://www.uph.edu/id",
+      "fields": [
+        {
+          "label": "",
+          "name": "s",
+          "placeholder": "Cari",
+          "required": true,
+          "tag": "input",
+          "type": "search"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "submit"
+        },
+        {
+          "label": "",
+          "name": "_wpnonce",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "hidden"
+        },
+        {
+          "label": "",
+          "name": "_wp_http_referer",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "hidden"
+        }
+      ],
+      "method": "get"
+    },
+    {
+      "action": "https://www.uph.edu/id/program",
+      "fields": [
+        {
+          "label": "",
+          "name": "p_search",
+          "placeholder": "Cari...",
+          "required": false,
+          "tag": "input",
+          "type": "text"
+        },
+        {
+          "label": "",
+          "name": "p_tags[]",
+          "placeholder": "Cari...",
+          "required": false,
+          "tag": "input",
+          "type": "hidden"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "p_level",
+          "placeholder": "",
+          "required": false,
+          "tag": "select",
+          "type": "select-one"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "p_type[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_type[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "button"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "p_faculty[]",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "submit"
+        }
+      ],
+      "method": "get"
+    }
+  ],
+  "headings": [
+    {
+      "level": 2,
+      "text": "Membentuk Pemimpin dan Membangun Perubahan"
+    },
+    {
+      "level": 2,
+      "text": "Membangun generasi dengan pendidikan kelas dunia dan fakultas beragam untuk mewujudkan masa depan"
+    },
+    {
+      "level": 2,
+      "text": "Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan."
+    },
+    {
+      "level": 2,
+      "text": "Membentuk Pemimpin dan Membangun Perubahan"
+    },
+    {
+      "level": 2,
+      "text": "Membangun generasi dengan pendidikan kelas dunia dan fakultas beragam untuk mewujudkan masa depan"
+    },
+    {
+      "level": 2,
+      "text": "Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan."
+    },
+    {
+      "level": 2,
+      "text": "Membentuk Pemimpin dan Membangun Perubahan"
+    },
+    {
+      "level": 2,
+      "text": "Memelopori Program Anestesiologi & Terapi Intensif di Indonesia"
+    },
+    {
+      "level": 2,
+      "text": "Program Unggulan"
+    },
+    {
+      "level": 2,
+      "text": "Jelajahi Lebih Banyak Program"
+    },
+    {
+      "level": 2,
+      "text": "Kabar Terbaru"
+    },
+    {
+      "level": 2,
+      "text": "Apa Kata Lulusan"
+    },
+    {
+      "level": 2,
+      "text": "Ikuti kami di Instagram"
+    }
+  ],
+  "health": {
+    "errors": [],
+    "failed_requests": [
+      {
+        "error": "net::ERR_ADDRESS_UNREACHABLE",
+        "type": "Script",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/880408228/"
+      },
+      {
+        "error": "net::ERR_ADDRESS_UNREACHABLE",
+        "type": "Image",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/880408228/"
+      },
+      {
+        "error": "net::ERR_ADDRESS_UNREACHABLE",
+        "type": "Script",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/969965463/"
+      },
+      {
+        "error": "net::ERR_ADDRESS_UNREACHABLE",
+        "type": "Image",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/969965463/"
+      }
+    ]
+  },
+  "lang": "id-ID",
+  "layouts": [
+    {
+      "blocks": [],
+      "page_h": 5084,
+      "page_w": 1425,
+      "type": {
+        "body": 18,
+        "h1": 0,
+        "h2": 38,
+        "h3": 0
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [],
+      "page_h": 6323,
+      "page_w": 753,
+      "type": {
+        "body": 18,
+        "h1": 0,
+        "h2": 38,
+        "h3": 0
+      },
+      "width": 768
+    },
+    {
+      "blocks": [],
+      "page_h": 5466,
+      "page_w": 390,
+      "type": {
+        "body": 16,
+        "h1": 0,
+        "h2": 34,
+        "h3": 0
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "https://www.uph.edu/",
+      "text": "EN"
+    },
+    {
+      "href": "https://www.uph.edu/id/",
+      "text": "ID"
+    },
+    {
+      "href": "https://www.uph.edu/id/",
+      "text": ""
+    },
+    {
+      "href": "https://www.uph.edu/",
+      "text": "EN"
+    },
+    {
+      "href": "https://www.uph.edu/id/",
+      "text": "ID"
+    },
+    {
+      "href": "https://one.uph.edu/?utm_source=uph.edu&utm_medium=referral&utm_campaign=website_cta&utm_content=header_apply_now",
+      "text": "DAFTAR SEKARANG"
+    },
+    {
+      "href": "https://uph.edu/id/brosur/overview/",
+      "text": "Brosur"
+    },
+    {
+      "href": "https://www.uph.edu/id/events/",
+      "text": "Berita dan Acara"
+    },
+    {
+      "href": "https://uph.edu/id/international-program",
+      "text": "Program Internasional"
+    },
+    {
+      "href": "https://uph.edu/id/facility/facilities/",
+      "text": "Fasilitas"
+    },
+    {
+      "href": "https://alumni.uph.edu/",
+      "text": "Alumni"
+    },
+    {
+      "href": "https://www.uph.edu/id/kelas-karyawan/",
+      "text": "Kelas Karyawan"
+    },
+    {
+      "href": "https://medan.uph.edu/",
+      "text": "UPH Medan"
+    },
+    {
+      "href": "https://surabaya.uph.edu/",
+      "text": "UPH Surabaya"
+    },
+    {
+      "href": "https://www.uphcollege.com/home",
+      "text": "UPH College"
+    },
+    {
+      "href": "https://www.pelitalearninghub.id/",
+      "text": "Pusat Belajar UPH"
+    },
+    {
+      "href": "https://lsp.uph.edu/",
+      "text": "Lembaga Sertifikasi Profesi"
+    },
+    {
+      "href": "https://www.facebook.com/UPHImpactlives",
+      "text": ""
+    },
+    {
+      "href": "https://x.com/uphimpactslives",
+      "text": ""
+    },
+    {
+      "href": "https://www.instagram.com/uphimpactslives/",
+      "text": ""
+    },
+    {
+      "href": "https://www.linkedin.com/school/universitas-pelita-harapan-main-campus/",
+      "text": ""
+    },
+    {
+      "href": "https://www.youtube.com/c/UniversitasPelitaHarapan",
+      "text": ""
+    },
+    {
+      "href": "https://www.uph.edu/",
+      "text": "EN"
+    },
+    {
+      "href": "https://www.uph.edu/id/",
+      "text": "ID"
+    },
+    {
+      "href": "https://www.uph.edu/id/#",
+      "text": "Akademik"
+    },
+    {
+      "href": "https://www.uph.edu/id/academic/undergraduate/",
+      "text": "Sarjana"
+    },
+    {
+      "href": "https://www.uph.edu/id/academic/pascasarjana/",
+      "text": "Pascasarjana"
+    },
+    {
+      "href": "https://www.uph.edu/id/academic/employee-class/",
+      "text": "Program Profesional"
+    },
+    {
+      "href": "https://www.uph.edu/id/program/",
+      "text": "Pilihan Studi"
+    },
+    {
+      "href": "https://www.uph.edu/id/#",
+      "text": "Fasilitas"
+    },
+    {
+      "href": "https://www.uph.edu/id/facility/map-kampus/",
+      "text": "Map Kampus"
+    },
+    {
+      "href": "https://www.uph.edu/id/facility/fasilitas/",
+      "text": "Fasilitas"
+    },
+    {
+      "href": "https://www.uph.edu/id/facility/shuttle-uph/",
+      "text": "Shuttle UPH"
+    },
+    {
+      "href": "https://www.uph.edu/id/facility/residen/",
+      "text": "Residen"
+    },
+    {
+      "href": "https://www.uph.edu/id/#",
+      "text": "Kegiatan Mahasiswa"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-activity/komunitas/",
+      "text": "Komunitas"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-activity/organisasi/",
+      "text": "Organisasi"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-activity/klub/",
+      "text": "Klub"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-activity/mentoring/",
+      "text": "Mentoring"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-activity/departemen-olahraga/",
+      "text": "Departemen Olahraga"
+    },
+    {
+      "href": "https://www.uph.edu/id/#",
+      "text": "Support untuk Mahasiswa"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-support/pusat-psikologi/",
+      "text": "Pusat Psikologi"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-support/investment-gallery/",
+      "text": "Investment Gallery"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-support/sparklabs-incubation/",
+      "text": "SparkLabs Incubation"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-support/pengajaran-pembelajaran/",
+      "text": "Pengajaran & Pembelajaran"
+    },
+    {
+      "href": "https://www.uph.edu/id/student-support/alumni-relations-alumni-association/",
+      "text": "Alumni Relations & Alumni Association"
+    },
+    {
+      "href": "https://www.uph.edu/id/#",
+      "text": "Tentang UPH"
+    },
+    {
+      "href": "https://www.uph.edu/id/about-uph/sejarah/",
+      "text": "Sejarah"
+    },
+    {
+      "href": "https://www.uph.edu/about-uph/history/#visionmission",
+      "text": "Vision & Mission"
+    },
+    {
+      "href": "https://www.uph.edu/id/about-uph/profil-kompetensi/",
+      "text": "Profil & Kompetensi"
+    },
+    {
+      "href": "https://www.uph.edu/id/about-uph/ekspansi-kampus/",
+      "text": "Ekspansi Kampus"
+    },
+    {
+      "href": "https://www.uph.edu/id/about-uph/kepemimpinan-kampus/",
+      "text": "Kepemimpinan Kampus"
+    },
+    {
+      "href": "https://www.uph.edu/id/about-uph/mitra/",
+      "text": "Mitra"
+    },
+    {
+      "href": "https://www.uph.edu/id/about-uph/center-for-foundational-education/",
+      "text": "CFE"
+    },
+    {
+      "href": "https://www.uph.edu/id/anesthesiology-specialist-program/",
+      "text": "Baca Selengkapnya"
+    },
+    {
+      "href": "https://www.uph.edu/id/program/",
+      "text": "Temukan lebih banyak program"
+    },
+    {
+      "href": "https://www.uph.edu/id/program/visual-communication-design-graphic-design/",
+      "text": "Desain Komunikasi Visual: Desain Grafis"
+    },
+    {
+      "href": "https://www.uph.edu/id/program/kedokteran/",
+      "text": "Kedokteran"
+    },
+    {
+      "href": "https://www.uph.edu/id/program/bisnis-dan-kewirausahaan-pangan/",
+      "text": "Bisnis dan Kewirausahaan Pangan"
+    },
+    {
+      "href": "https://www.uph.edu/id/program/manajemen-dan-analitika-rantai-pasok/",
+      "text": "Manajemen dan Analitika Rantai Pasok"
+    },
+    {
+      "href": "https://www.uph.edu/id/program/hukum-bisnis/",
+      "text": "Hukum Bisnis"
+    },
+    {
+      "href": "https://www.uph.edu/id/program/marketing-retail-innovation/",
+      "text": "Marketing, Retail & Innovation"
+    },
+    {
+      "href": "https://www.uph.edu/id/news-archive/",
+      "text": "Baca cerita lainnya"
+    },
+    {
+      "href": "https://www.uph.edu/id/supply-chain-pengertian-komponen-dan-perannya-di-era-digital/",
+      "text": "Supply Chain: Pengertian, Komponen, dan Perannya di Era Digital"
+    },
+    {
+      "href": "https://www.uph.edu/id/esg-pengertian-3-pilar-contoh-dan-peluang-kariernya/",
+      "text": "ESG: Pengertian, 3 Pilar, Contoh, dan Peluang Kariernya"
+    },
+    {
+      "href": "https://www.uph.edu/id/iot-pengertian-cara-kerja-danontohnya/",
+      "text": "Apa Itu IoT (Internet of Things)? Pengertian, Cara Kerja, dan Contohnya"
+    },
+    {
+      "href": "https://www.uph.edu/id/data-science-dan-data-analytics-panduan-lengkap-jurusan/",
+      "text": "Jurusan Data Science dan Data Analytics: Panduan Lengkap untuk Calon Mahasiswa"
+    },
+    {
+      "href": "https://alumni.uph.edu/",
+      "text": "Baca Selengkapnya"
+    },
+    {
+      "href": "https://www.facebook.com/UPHImpactlives",
+      "text": ""
+    },
+    {
+      "href": "https://x.com/uphimpactslives",
+      "text": ""
+    },
+    {
+      "href": "https://www.instagram.com/uphimpactslives",
+      "text": ""
+    },
+    {
+      "href": "https://www.youtube.com/c/UniversitasPelitaHarapan",
+      "text": ""
+    },
+    {
+      "href": "https://www.instagram.com/reel/DfbYYs-hOYG/",
+      "text": "Instagram"
+    },
+    {
+      "href": "https://www.instagram.com/reel/DfL7j1yhBwf/",
+      "text": "Instagram"
+    },
+    {
+      "href": "https://www.instagram.com/reel/DfCRnbJhgqT/",
+      "text": "Instagram"
+    },
+    {
+      "href": "https://www.instagram.com/p/De-vTvIvrAm/",
+      "text": "Instagram"
+    },
+    {
+      "href": "https://www.instagram.com/p/Detat_MjyCv/",
+      "text": "Instagram"
+    },
+    {
+      "href": "https://www.instagram.com/p/Degg-6xPR9Q/",
+      "text": "Instagram"
+    },
+    {
+      "href": "https://www.uph.edu/id",
+      "text": ""
+    },
+    {
+      "href": "https://maps.app.goo.gl/7nfvmmqvqYYycX7T8",
+      "text": "Jl. M. H. Thamrin Boulevard 1100 Lippo Village Tangerang 15811 Indonesia"
+    },
+    {
+      "href": "tel:0215460901",
+      "text": "(021) 546 0901"
+    },
+    {
+      "href": "mailto:undergraduate.admission@uph.edu",
+      "text": "undergraduate.admission@uph.edu"
+    },
+    {
+      "href": "mailto:graduate.admission@uph.edu",
+      "text": "graduate.admission@uph.edu"
+    },
+    {
+      "href": "https://medan.uph.edu/",
+      "text": "UPH Medan"
+    },
+    {
+      "href": "https://surabaya.uph.edu/",
+      "text": "UPH Surabaya"
+    },
+    {
+      "href": "https://www.uphcollege.com/home",
+      "text": "UPH College"
+    },
+    {
+      "href": "https://www.pelitalearninghub.id/",
+      "text": "UPH Learning Center"
+    },
+    {
+      "href": "https://lsp.uph.edu/",
+      "text": "Lembaga Sertifikasi Profesi"
+    },
+    {
+      "href": "https://alumni.uph.edu/",
+      "text": "Lulusan"
+    },
+    {
+      "href": "https://fest.uph.edu/",
+      "text": "UPH Festival"
+    },
+    {
+      "href": "https://www.uph.edu/id/academic-calendar/",
+      "text": "Kalender Akademik"
+    },
+    {
+      "href": "https://uph.edu/id/kontak-kami/",
+      "text": "Daftar Kontak"
+    },
+    {
+      "href": "https://www.uph.edu/id/contact/",
+      "text": "Kontak Kami"
+    },
+    {
+      "href": "https://uph.edu/id/registrar/contact-information/",
+      "text": "Registrar"
+    },
+    {
+      "href": "https://sdgs.uph.edu/",
+      "text": "SDGs UPH"
+    },
+    {
+      "href": "https://greencampus.uph.edu/",
+      "text": "Green Campus UPH"
+    },
+    {
+      "href": "https://uph.edu/id/quiz",
+      "text": "Kuis"
+    },
+    {
+      "href": "https://uph.edu/id/career-at-uph/position-type/akademik/",
+      "text": "Pekerjaan"
+    },
+    {
+      "href": "https://uph.edu/id/privacy-policy/",
+      "text": "Kebijakan Privasi"
+    },
+    {
+      "href": "https://www.facebook.com/UPHImpactlives",
+      "text": ""
+    },
+    {
+      "href": "https://x.com/uphimpactslives",
+      "text": ""
+    },
+    {
+      "href": "https://www.instagram.com/uphimpactslives/",
+      "text": ""
+    },
+    {
+      "href": "https://www.linkedin.com/school/universitas-pelita-harapan-main-campus/",
+      "text": ""
+    },
+    {
+      "href": "https://www.youtube.com/c/UniversitasPelitaHarapan",
+      "text": ""
+    }
+  ],
+  "meta": {
+    "description": "Universitas swasta di Tangerang, dengan beragam program sarjana, pascasarjana, program internasional, dan beasiswa. Temukan jurusanmu di UPH.",
+    "icons": [
+      "https://www.uph.edu/wp-content/uploads/2026/07/cropped-UPH-Vertical-Logo-1-1-150x150.png?x81484",
+      "https://www.uph.edu/wp-content/uploads/2026/07/cropped-UPH-Vertical-Logo-1-1-300x300.png?x81484",
+      "https://www.uph.edu/wp-content/uploads/2026/07/cropped-UPH-Vertical-Logo-1-1-300x300.png?x81484",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/favicon.ico?x81484",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/favicon-16x16.png?x81484",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/favicon-32x32.png?x81484",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/favicon-96x96.png?x81484",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/android-icon-144x144.png?x81484",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/android-icon-192x192.png?x81484",
+      "https://www.uph.edu/wp-content/themes/uph-revamp/assets/img/homescreen/apple-icon.png?x81484"
+    ],
+    "og_image": "https://www.uph.edu/wp-content/uploads/2025/01/banner-scaled.jpg",
+    "og_title": "Beranda",
+    "theme_color": "#000"
+  },
+  "outline": [
+    {
+      "box": {
+        "h": 42,
+        "w": 138,
+        "x": 118,
+        "y": -11
+      },
+      "class": "uph-header__logo",
+      "color": "#ffffff",
+      "depth": 6,
+      "font": "18px 400",
+      "href": "https://www.uph.edu/id/",
+      "tag": "a"
+    },
+    {
+      "alt": "UPH Universitas Pelita Harapan",
+      "box": {
+        "h": 42,
+        "w": 138,
+        "x": 118,
+        "y": -11
+      },
+      "class": "uph-header__logo__el lazy entered loaded",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png?x81484",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 42,
+        "w": 61,
+        "x": 938,
+        "y": -11
+      },
+      "class": "uph-header__lang uph-header__lang--d",
+      "color": "#ffffff",
+      "depth": 7,
+      "display": "flex",
+      "flex": "row",
+      "font": "18px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 42,
+        "w": 32,
+        "x": 938,
+        "y": -11
+      },
+      "class": "uph-header__lang__link",
+      "color": "#888888",
+      "depth": 9,
+      "font": "12px 500",
+      "href": "https://www.uph.edu/",
+      "tag": "a",
+      "text": "EN"
+    },
+    {
+      "box": {
+        "h": 42,
+        "w": 28,
+        "x": 971,
+        "y": -11
+      },
+      "class": "uph-header__lang__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "12px 700",
+      "href": "https://www.uph.edu/id/",
+      "tag": "a",
+      "text": "ID"
+    },
+    {
+      "background": "#ffffff",
+      "box": {
+        "h": 36,
+        "w": 201,
+        "x": 1035,
+        "y": -8
+      },
+      "class": "uph-header__apply uph-btn uph-btn--secondary",
+      "color": "#000000",
+      "depth": 7,
+      "font": "15px 700",
+      "href": "https://one.uph.edu/?utm_source=uph.edu&utm_medium=referral&utm_campaign=website_cta&utm_content=header_apply_now",
+      "tag": "a",
+      "text": "DAFTAR SEKARANG"
+    },
+    {
+      "box": {
+        "h": 36,
+        "w": 36,
+        "x": 1272,
+        "y": -8
+      },
+      "class": "uph-burger-menu js-uph-burger-menu",
+      "color": "#000000",
+      "depth": 7,
+      "font": "18px 400",
+      "tag": "button"
+    },
+    {
+      "alt": "Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan.",
+      "box": {
+        "h": 823,
+        "w": 1425,
+        "x": 0,
+        "y": 76
+      },
+      "class": "uph-banner__img__el uph-banner__img__el--d lazy entered loaded",
+      "color": "#000000",
+      "depth": 9,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2025/01/banner-scaled-min.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 144,
+        "w": 600,
+        "x": 118,
+        "y": 693
+      },
+      "class": "uph-banner__ttl",
+      "color": "#ffffff",
+      "depth": 10,
+      "font": "38px 700",
+      "tag": "h2",
+      "text": "Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan."
+    },
+    {
+      "box": {
+        "h": 10,
+        "w": 33,
+        "x": 678,
+        "y": 867
+      },
+      "class": "owl-dot active show",
+      "color": "#000000",
+      "depth": 5,
+      "font": "0px 400",
+      "role": "button",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 10,
+        "w": 10,
+        "x": 719,
+        "y": 867
+      },
+      "class": "owl-dot show",
+      "color": "#000000",
+      "depth": 5,
+      "font": "0px 400",
+      "role": "button",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 10,
+        "w": 10,
+        "x": 737,
+        "y": 867
+      },
+      "class": "owl-dot show",
+      "color": "#000000",
+      "depth": 5,
+      "font": "0px 400",
+      "role": "button",
+      "tag": "button"
+    },
+    {
+      "alt": "Memelopori Program Anestesiologi & Terapi Intensif di Indonesia",
+      "box": {
+        "h": 360,
+        "w": 640,
+        "x": 118,
+        "y": 969
+      },
+      "class": "uph-highlight__img lazy entered loaded",
+      "color": "#000000",
+      "depth": 7,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2025/02/Highlight-UPH-3-e1750231113335.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 117,
+        "w": 486,
+        "x": 822,
+        "y": 1144
+      },
+      "class": "uph-highlight__ttl",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "35px 400",
+      "tag": "h2",
+      "text": "Memelopori Program Anestesiologi & Terapi Intensif di Indonesia"
+    },
+    {
+      "box": {
+        "h": 38,
+        "w": 172,
+        "x": 822,
+        "y": 1291
+      },
+      "class": "uph-highlight__link uph-btn uph-btn--primary",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "https://www.uph.edu/id/anesthesiology-specialist-program/",
+      "tag": "a",
+      "text": "Baca Selengkapnya"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 375,
+        "x": 118,
+        "y": 1469
+      },
+      "class": "uph-section-head__ttl",
+      "color": "#000000",
+      "depth": 7,
+      "font": "38px 400",
+      "tag": "h2",
+      "text": "Program Unggulan"
+    },
+    {
+      "box": {
+        "h": 52,
+        "w": 375,
+        "x": 118,
+        "y": 1529
+      },
+      "class": "uph-section-head__desc",
+      "color": "#000000",
+      "depth": 7,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "Jelajahi program unggulan kami, dirancang dengan kurikulum komprehensif."
+    },
+    {
+      "box": {
+        "h": 42,
+        "w": 60,
+        "x": 1248,
+        "y": 1469
+      },
+      "class": "uph-section-head__link uph-btn uph-btn--more uph-btn--more-grey",
+      "color": "#000000",
+      "depth": 7,
+      "font": "0px 400",
+      "href": "https://www.uph.edu/id/program/",
+      "tag": "a",
+      "text": "Temukan lebih banyak program"
+    },
+    {
+      "alt": "Desain Komunikasi Visual: Desain Grafis",
+      "box": {
+        "h": 282,
+        "w": 378,
+        "x": 118,
+        "y": 1619
+      },
+      "class": "uph-featured__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2024/08/Visual-Communication-Design-featured.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "alt": "Kedokteran",
+      "box": {
+        "h": 282,
+        "w": 378,
+        "x": 524,
+        "y": 1619
+      },
+      "class": "uph-featured__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2024/08/Medicine-1-e1750234725840.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "alt": "Bisnis dan Kewirausahaan Pangan",
+      "box": {
+        "h": 282,
+        "w": 378,
+        "x": 930,
+        "y": 1619
+      },
+      "class": "uph-featured__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2024/08/Food-Business-Entrepreneurship-e1750145043477.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "alt": "Manajemen dan Analitika Rantai Pasok",
+      "box": {
+        "h": 282,
+        "w": 378,
+        "x": 118,
+        "y": 1929
+      },
+      "class": "uph-featured__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2024/08/Supply-Chain-Management-Analytics-e1750145343778.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "alt": "Hukum Bisnis",
+      "box": {
+        "h": 282,
+        "w": 378,
+        "x": 524,
+        "y": 1929
+      },
+      "class": "uph-featured__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2024/07/Business-Law-e1750234879827.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "alt": "Marketing, Retail & Innovation",
+      "box": {
+        "h": 282,
+        "w": 378,
+        "x": 930,
+        "y": 1929
+      },
+      "class": "uph-featured__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2024/08/Marketing-Retail-Innovation-e1750235149578.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 525,
+        "x": 118,
+        "y": 2351
+      },
+      "class": "uph-section-head__ttl",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "38px 400",
+      "tag": "h2",
+      "text": "Jelajahi Lebih Banyak Program"
+    },
+    {
+      "box": {
+        "h": 52,
+        "w": 280,
+        "x": 118,
+        "y": 2411
+      },
+      "class": "uph-section-head__desc",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "Raih masa depan dengan beragam pilihan program kami"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 1210,
+        "x": 108,
+        "y": 2511
+      },
+      "class": "uph-section-browse__list js-uph-section-browse-list",
+      "color": "#ffffff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "row",
+      "font": "18px 400",
+      "id": "browseForm",
+      "tag": "form"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 372,
+        "x": 118,
+        "y": 2511
+      },
+      "class": "uph-section-browse__input uph-btn uph-btn--search",
+      "color": "#a1a1a1",
+      "depth": 9,
+      "font": "20px 400",
+      "id": "p_search",
+      "name": "p_search",
+      "placeholder": "Cari...",
+      "tag": "input",
+      "type": "text"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 204,
+        "x": 510,
+        "y": 2511
+      },
+      "class": "uph-section-browse__input uph-section-browse__input--single uph-btn uph-btn--select",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "20px 400",
+      "tag": "button",
+      "text": "Semua Tingkat"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 220,
+        "x": 734,
+        "y": 2511
+      },
+      "class": "uph-section-browse__input uph-btn uph-btn--select",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "20px 400",
+      "tag": "button",
+      "text": "Jenis Program"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 168,
+        "x": 974,
+        "y": 2511
+      },
+      "class": "uph-section-browse__input uph-btn uph-btn--select",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "20px 400",
+      "tag": "button",
+      "text": "Fakultas"
+    },
+    {
+      "background": "#ffffff",
+      "box": {
+        "h": 44,
+        "w": 146,
+        "x": 1162,
+        "y": 2511
+      },
+      "class": "uph-section-browse__input uph-btn uph-btn--quaternary",
+      "color": "#000000",
+      "depth": 9,
+      "font": "20px 400",
+      "tag": "button",
+      "text": "Jelajahi"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 280,
+        "x": 118,
+        "y": 2695
+      },
+      "class": "uph-section-head__ttl",
+      "color": "#000000",
+      "depth": 7,
+      "font": "38px 400",
+      "tag": "h2",
+      "text": "Kabar Terbaru"
+    },
+    {
+      "box": {
+        "h": 78,
+        "w": 280,
+        "x": 118,
+        "y": 2755
+      },
+      "class": "uph-section-head__desc",
+      "color": "#000000",
+      "depth": 7,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "Temukan kabar terbaru dan perkembangan menarik di fakultas kami."
+    },
+    {
+      "box": {
+        "h": 42,
+        "w": 60,
+        "x": 1248,
+        "y": 2695
+      },
+      "class": "uph-section-head__link uph-btn uph-btn--more",
+      "color": "#000000",
+      "depth": 7,
+      "font": "0px 400",
+      "href": "https://www.uph.edu/id/news-archive/",
+      "tag": "a",
+      "text": "Baca cerita lainnya"
+    },
+    {
+      "alt": "Supply Chain: Pengertian, Komponen, dan Perannya di Era Digital",
+      "box": {
+        "h": 435,
+        "w": 580,
+        "x": 118,
+        "y": 2865
+      },
+      "class": "uph-stories__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2026/10/Adv-News-Supply-Chain.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "alt": "ESG: Pengertian, 3 Pilar, Contoh, dan Peluang Kariernya",
+      "box": {
+        "h": 180,
+        "w": 240,
+        "x": 728,
+        "y": 2865
+      },
+      "class": "uph-stories__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2026/10/Adv-ESG-1.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "alt": "Apa Itu IoT (Internet of Things)? Pengertian, Cara Kerja, dan Contohnya",
+      "box": {
+        "h": 180,
+        "w": 240,
+        "x": 728,
+        "y": 3094
+      },
+      "class": "uph-stories__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2026/10/Internet-of-Things.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "alt": "Jurusan Data Science dan Data Analytics: Panduan Lengkap untuk Calon Mahasiswa",
+      "box": {
+        "h": 180,
+        "w": 240,
+        "x": 728,
+        "y": 3323
+      },
+      "class": "uph-stories__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2026/10/Data-Analytics.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 308,
+        "x": 118,
+        "y": 3667
+      },
+      "class": "uph-testimony__ttl uph-section-ttl",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "38px 400",
+      "tag": "h2",
+      "text": "Apa Kata Lulusan"
+    },
+    {
+      "box": {
+        "h": 104,
+        "w": 308,
+        "x": 118,
+        "y": 3735
+      },
+      "class": "uph-testimony__desc",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "Baca testimoni dan dapatkan inspirasi dari alumni kami yang berprestasi yang berbagi pemikiran mereka tentang fakultas kami."
+    },
+    {
+      "box": {
+        "h": 38,
+        "w": 172,
+        "x": 118,
+        "y": 3869
+      },
+      "class": "uph-testimony__link uph-btn uph-btn--primary",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "https://alumni.uph.edu/",
+      "tag": "a",
+      "text": "Baca Selengkapnya"
+    },
+    {
+      "box": {
+        "h": 240,
+        "w": 813,
+        "x": 494,
+        "y": 3667
+      },
+      "class": "uph-testimony__item swiper-slide-active",
+      "color": "#ffffff",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "“Bagi saya, UPH lebih dari sekadar tempat untuk belajar. UPH adalah tempat untuk memperluas jaringan dan mempersiapkan diri untuk menghadapi berbagai tantangan di masa depan” Wahyu Wiwoho Ilmu Komunik"
+    },
+    {
+      "alt": "Wahyu Wiwoho",
+      "box": {
+        "h": 240,
+        "w": 240,
+        "x": 494,
+        "y": 3667
+      },
+      "class": "uph-testimony__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 11,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2025/02/Wahyu-Wiwoho-e1750233689215.jpeg?x81484",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 99,
+        "w": 519,
+        "x": 764,
+        "y": 3689
+      },
+      "class": "uph-testimony__profile",
+      "color": "#000000",
+      "depth": 11,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "“Bagi saya, UPH lebih dari sekadar tempat untuk belajar. UPH adalah tempat untuk memperluas jaringan dan mempersiapkan diri untuk menghadapi berbagai tantangan di masa depan”"
+    },
+    {
+      "box": {
+        "h": 240,
+        "w": 813,
+        "x": 1342,
+        "y": 3667
+      },
+      "class": "uph-testimony__item swiper-slide-next",
+      "color": "#ffffff",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "“Ketika saya memilih UPH sebagai tempat belajar, saya tidak hanya mempelajari teori-teori. Pendidikan musik di sini telah mendorong musikalitas saya dan memperluas jaringan saya di industri musik. Par"
+    },
+    {
+      "alt": "Cantika Abigail",
+      "box": {
+        "h": 240,
+        "w": 240,
+        "x": 1342,
+        "y": 3667
+      },
+      "class": "uph-testimony__img__el lazy entered loaded",
+      "color": "#000000",
+      "depth": 11,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2025/02/Cantika-Abigail-1-e1750230546927.jpg?x81484",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 123,
+        "w": 519,
+        "x": 1612,
+        "y": 3689
+      },
+      "class": "uph-testimony__profile",
+      "color": "#000000",
+      "depth": 11,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "“Ketika saya memilih UPH sebagai tempat belajar, saya tidak hanya mempelajari teori-teori. Pendidikan musik di sini telah mendorong musikalitas saya dan memperluas jaringan saya di industri musik. Par"
+    },
+    {
+      "box": {
+        "h": 240,
+        "w": 813,
+        "x": 2190,
+        "y": 3667
+      },
+      "class": "uph-testimony__item",
+      "color": "#ffffff",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "“Belajar dari yang terbaik, bersama yang terbaik dari yang terbaik.” Sandiaga Uno Doctor of Management Minister of Tourism and Creative Economy"
+    },
+    {
+      "alt": "Sandiaga Uno",
+      "box": {
+        "h": 240,
+        "w": 240,
+        "x": 2190,
+        "y": 3667
+      },
+      "class": "uph-testimony__img__el lazy",
+      "color": "#000000",
+      "depth": 11,
+      "font": "12px 400",
+      "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20876%20776'%3E%3C/svg%3E",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 519,
+        "x": 2460,
+        "y": 3689
+      },
+      "class": "uph-testimony__profile",
+      "color": "#000000",
+      "depth": 11,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "“Belajar dari yang terbaik, bersama yang terbaik dari yang terbaik.”"
+    },
+    {
+      "box": {
+        "h": 96,
+        "w": 276,
+        "x": 118,
+        "y": 4047
+      },
+      "class": "uph-section-contact__ttl uph-section-ttl",
+      "color": "#000000",
+      "depth": 7,
+      "font": "38px 400",
+      "tag": "h2",
+      "text": "Ikuti kami di Instagram"
+    },
+    {
+      "box": {
+        "h": 33,
+        "w": 248,
+        "x": 118,
+        "y": 4175
+      },
+      "class": "uph-section-contact__btn uph-btn uph-btn--txt",
+      "color": "#000000",
+      "depth": 8,
+      "font": "18px 400",
+      "tag": "button",
+      "text": "Lihat kami di media sosial"
+    },
+    {
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 494,
+        "y": 4047
+      },
+      "class": "uph-section-contact__item swiper-slide-active",
+      "color": "#000000",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "Instagram"
+    },
+    {
+      "alt": "Anak Tekpang kuliahnya ngapain aja sih? 🤔 #UPH #UPHImpactsLives #UniversitasPelitaHarapan",
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 494,
+        "y": 4047
+      },
+      "class": "uph-section-contact__img__el",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/891215265_18643603834042542_8104080736972418974_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Ja3c8vTL23oQ7kNvwF5gCQl&_nc_oc=Adq19PcpwJAJfxet1PQKkXV0-izB9T3e2Y6j4lXgEhALWYIhRUDddhM8TZmSUBHG4ro&_nc_zt=23&_nc_ht=instagram.fbdo6-2.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQIofNR5nC9CdLnEBE4QWxRm5c4UpkrUBfJCDNpj2yrUW-kpCJwr5yIOjpLZbUxwlk4tOMAPHpsCSg&oh=00_AQTBdA_vwzyurGmbir8GoopFavlfCDR_rplXA10F_KNcHA&oe=6AF85AFF",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 742,
+        "y": 4047
+      },
+      "class": "uph-section-contact__item swiper-slide-next",
+      "color": "#000000",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "Instagram"
+    },
+    {
+      "alt": "tap to see UPH in colors 👆 #UPH #UPHImpactsLives #UniversitasPelitaHarapan",
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 742,
+        "y": 4047
+      },
+      "class": "uph-section-contact__img__el",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://instagram.fbdo6-3.fna.fbcdn.net/v/t51.82787-15/870731506_18641097448042542_3717639269563561975_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qy_GsGlTsfUQ7kNvwH16jtz&_nc_oc=AdrHvZ_P2U2bxfov_PKFyTtVzPOZjqQ68wPtiQci47Jf9x_luvWf0nprTc9qPOhmg38&_nc_zt=23&_nc_ht=instagram.fbdo6-3.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQJDOt9Z2aARttua6T3FsrHQPRChHv6QgKs3r3ps4yEj_klbej7YR6TBMfKACJO8GQft1VtQOucL1Q&oh=00_AQTCB-v9lgBJw-M1QUMzwGg5LUQ0FN0l8ZXZRjYV6-Ll3A&oe=6AF85A41",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 990,
+        "y": 4047
+      },
+      "class": "uph-section-contact__item",
+      "color": "#000000",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "Instagram"
+    },
+    {
+      "alt": "don’t stop to chase for your dreams here at UPH ✨ #UPH #UPHImpactsLives #UniversitasPelitaHarapan",
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 990,
+        "y": 4047
+      },
+      "class": "uph-section-contact__img__el",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/870985915_18640383976042542_1809676227889335019_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NoWHU3eWK4oQ7kNvwG8Fk5o&_nc_oc=AdrPLgVgFWfx2xjhwsFsGKS6PvdZBjmTa4m0iHtFS25a_OnIIKBEhQnBrCTQ0XJpkV0&_nc_zt=23&_nc_ht=instagram.fbdo6-2.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQLVvB_30Pj_XjoAw5drEavpLeC9UZO0a0EIiOfwMkYuvt276xwyZMxofcJWmNwBieYTkgQ_sAoJmA&oh=00_AQTzHoXLf33EmhjYhb9uqUVxvdfn__lVRZTHF-S6l4PNjw&oe=6AF854E1",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 1238,
+        "y": 4047
+      },
+      "class": "uph-section-contact__item",
+      "color": "#000000",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "Instagram"
+    },
+    {
+      "alt": "FROM LETTER TO LETTER, LET’S THINK TOGETHER. One letter, endless questions. What makes a letter a letter? How do its for",
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 1238,
+        "y": 4047
+      },
+      "class": "uph-section-contact__img__el",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://instagram.fbdo6-2.fna.fbcdn.net/v/t51.82787-15/866565035_18639963295042542_1223957603252881535_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PrJ8VcdIe4QQ7kNvwHUSWxi&_nc_oc=AdpoD1Jz7CfuRjnnOboDFVyjbOaxhkz9bz2F0LtQPVeIghQb0YhG0rphu6yYS1SM6ww&_nc_zt=23&_nc_ht=instagram.fbdo6-2.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQK_x5w_rv3g-LGbPknrW_CactiUR5Ok7i6xlnn6E9alprRUg5Jd36cmuXxJ20MPhb_8Lw0bGaUlrw&oh=00_AQSD80l86wuvtPW9EQJG10ma48_ojtZKIVpyubAqg8kIQA&oe=6AF8517B",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 1486,
+        "y": 4047
+      },
+      "class": "uph-section-contact__item",
+      "color": "#000000",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "Instagram"
+    },
+    {
+      "alt": "On October 14, 2026, Universitas Pelita Harapan (UPH) welcomed Xiamen University, China, for the signing of a Memorandum",
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 1486,
+        "y": 4047
+      },
+      "class": "uph-section-contact__img__el",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://instagram.fcgk4-4.fna.fbcdn.net/v/t51.82787-15/852830492_18637635208042542_8605466142742135462_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=s-olHUgtQSYQ7kNvwHsINuN&_nc_oc=AdrWgyPEolF1W85nc6drOavzsyCO6G7Ul3UEPgo-C8njIctJ7ksHTEDhu47ySl3_zuw&_nc_zt=23&_nc_ht=instagram.fcgk4-4.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQJXGPbwY0urqea3KaPw6rIIF5MkVuNsPjHrsv7yS6l67dvOtk97cLeRTGNqqGxTFaEcH04Nd7yrFA&oh=00_AQTa3SNIAYkLBZsbAFKYykeomxALN1yzJyY9GyT28iKebg&oe=6AF871D1",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 1734,
+        "y": 4047
+      },
+      "class": "uph-section-contact__item",
+      "color": "#000000",
+      "depth": 8,
+      "font": "0px 400",
+      "role": "group",
+      "tag": "div",
+      "text": "Instagram"
+    },
+    {
+      "alt": "UPH students, here’s a reward for you 🏅 #UPH #UPHImpactsLives #UniversitasPelitaHarapan",
+      "box": {
+        "h": 244,
+        "w": 244,
+        "x": 1734,
+        "y": 4047
+      },
+      "class": "uph-section-contact__img__el",
+      "color": "#000000",
+      "depth": 10,
+      "font": "12px 400",
+      "src": "https://instagram.fcgk4-4.fna.fbcdn.net/v/t51.82787-15/848014973_18635725384042542_2835523322476596164_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=R0cj7R0khLoQ7kNvwG0-hYs&_nc_oc=Adqvjcgb3FL_8lu0S8fVyYXly-L1t2MuWFlZ16jKMjLQ3hJ18NDfBtpvkunKHJiMp0I&_nc_zt=23&_nc_ht=instagram.fcgk4-4.fna&edm=ANo9K5cEAAAA&_nc_gid=gVbY4OMtoLxJr6WXZPSIJA&_nc_tpa=Q5bMBQITWg-543T4uxgLD_hl5DZDlvwEi7dRS_fNh3vFPkB8PD2ytpV9MDAj2CRDPS1jWzTQJVyxyWRITw&oh=00_AQQSs-DnEFyMtqdE7qsuTHASB5l971xNG_RmZEUW092WwQ&oe=6AF86AAD",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 406,
+        "w": 298,
+        "x": 118,
+        "y": 4478
+      },
+      "class": "uph-footer__logo",
+      "color": "#ffffff",
+      "depth": 6,
+      "font": "18px 400",
+      "href": "https://www.uph.edu/id",
+      "tag": "a"
+    },
+    {
+      "alt": "UPH Universitas Pelita Harapan",
+      "box": {
+        "h": 56,
+        "w": 185,
+        "x": 118,
+        "y": 4478
+      },
+      "class": "uph-footer__logo__el lazy entered loaded",
+      "color": "#ffffff",
+      "depth": 7,
+      "font": "12px 400",
+      "src": "https://www.uph.edu/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png?x81484",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 168,
+        "w": 298,
+        "x": 415,
+        "y": 4478
+      },
+      "class": "uph-footer__contact__list",
+      "color": "#ffffff",
+      "depth": 7,
+      "display": "block",
+      "font": "18px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 68,
+        "w": 254,
+        "x": 449,
+        "y": 4480
+      },
+      "class": "uph-footer__contact__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://maps.app.goo.gl/7nfvmmqvqYYycX7T8",
+      "tag": "a",
+      "text": "Jl. M. H. Thamrin Boulevard 1100 Lippo Village Tangerang 15811 Indonesia"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 113,
+        "x": 449,
+        "y": 4564
+      },
+      "class": "uph-footer__contact__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "tel:0215460901",
+      "tag": "a",
+      "text": "(021) 546 0901"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 269,
+        "x": 449,
+        "y": 4600
+      },
+      "color": "#ffffff",
+      "depth": 10,
+      "font": "17px 400",
+      "href": "mailto:undergraduate.admission@uph.edu",
+      "tag": "a",
+      "text": "undergraduate.admission@uph.edu"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 226,
+        "x": 449,
+        "y": 4624
+      },
+      "color": "#ffffff",
+      "depth": 10,
+      "font": "17px 400",
+      "href": "mailto:graduate.admission@uph.edu",
+      "tag": "a",
+      "text": "graduate.admission@uph.edu"
+    },
+    {
+      "box": {
+        "h": 406,
+        "w": 200,
+        "x": 863,
+        "y": 4478
+      },
+      "class": "uph-footer__menu__list",
+      "color": "#ffffff",
+      "depth": 7,
+      "display": "block",
+      "font": "18px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 93,
+        "x": 863,
+        "y": 4538
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://medan.uph.edu/",
+      "tag": "a",
+      "text": "UPH Medan"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 112,
+        "x": 863,
+        "y": 4574
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://surabaya.uph.edu/",
+      "tag": "a",
+      "text": "UPH Surabaya"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 98,
+        "x": 863,
+        "y": 4610
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://www.uphcollege.com/home",
+      "tag": "a",
+      "text": "UPH College"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 162,
+        "x": 863,
+        "y": 4646
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://www.pelitalearninghub.id/",
+      "tag": "a",
+      "text": "UPH Learning Center"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 150,
+        "x": 863,
+        "y": 4682
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://lsp.uph.edu/",
+      "tag": "a",
+      "text": "Lembaga Sertifikasi Profesi"
+    },
+    {
+      "box": {
+        "h": 406,
+        "w": 155,
+        "x": 1153,
+        "y": 4478
+      },
+      "class": "uph-footer__menu__list",
+      "color": "#ffffff",
+      "depth": 7,
+      "display": "block",
+      "font": "18px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 59,
+        "x": 1153,
+        "y": 4538
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://alumni.uph.edu/",
+      "tag": "a",
+      "text": "Lulusan"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 98,
+        "x": 1153,
+        "y": 4574
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://fest.uph.edu/",
+      "tag": "a",
+      "text": "UPH Festival"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 148,
+        "x": 1153,
+        "y": 4610
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://www.uph.edu/id/academic-calendar/",
+      "tag": "a",
+      "text": "Kalender Akademik"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 105,
+        "x": 1153,
+        "y": 4646
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://uph.edu/id/kontak-kami/",
+      "tag": "a",
+      "text": "Daftar Kontak"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 97,
+        "x": 1153,
+        "y": 4682
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://www.uph.edu/id/contact/",
+      "tag": "a",
+      "text": "Kontak Kami"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 69,
+        "x": 1153,
+        "y": 4718
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://uph.edu/id/registrar/contact-information/",
+      "tag": "a",
+      "text": "Registrar"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 85,
+        "x": 1153,
+        "y": 4754
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://sdgs.uph.edu/",
+      "tag": "a",
+      "text": "SDGs UPH"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 155,
+        "x": 1153,
+        "y": 4790
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://greencampus.uph.edu/",
+      "tag": "a",
+      "text": "Green Campus UPH"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 33,
+        "x": 1153,
+        "y": 4826
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://uph.edu/id/quiz",
+      "tag": "a",
+      "text": "Kuis"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 75,
+        "x": 1153,
+        "y": 4862
+      },
+      "class": "uph-footer__menu__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "17px 400",
+      "href": "https://uph.edu/id/career-at-uph/position-type/akademik/",
+      "tag": "a",
+      "text": "Pekerjaan"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 595,
+        "x": 118,
+        "y": 4972
+      },
+      "class": "uph-footer__copyright",
+      "color": "#b6b6b6",
+      "depth": 6,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "© Copyright 2025 Yayasan Universitas Pelita Harapan. All Rights Reserved."
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 130,
+        "x": 863,
+        "y": 4972
+      },
+      "class": "uph-footer__privacy",
+      "color": "#b6b6b6",
+      "depth": 7,
+      "font": "17px 400",
+      "href": "https://uph.edu/id/privacy-policy/",
+      "tag": "a",
+      "text": "Kebijakan Privasi"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 216,
+        "x": 1092,
+        "y": 4972
+      },
+      "class": "uph-footer__socmed",
+      "color": "#ffffff",
+      "depth": 7,
+      "display": "flex",
+      "flex": "row",
+      "font": "18px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 24,
+        "x": 1092,
+        "y": 4972
+      },
+      "class": "uph-footer__socmed__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "18px 400",
+      "href": "https://www.facebook.com/UPHImpactlives",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 24,
+        "x": 1140,
+        "y": 4972
+      },
+      "class": "uph-footer__socmed__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "18px 400",
+      "href": "https://x.com/uphimpactslives",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 24,
+        "x": 1188,
+        "y": 4972
+      },
+      "class": "uph-footer__socmed__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "18px 400",
+      "href": "https://www.instagram.com/uphimpactslives/",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 24,
+        "x": 1236,
+        "y": 4972
+      },
+      "class": "uph-footer__socmed__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "18px 400",
+      "href": "https://www.linkedin.com/school/universitas-pelita-harapan-main-campus/",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 24,
+        "x": 1284,
+        "y": 4972
+      },
+      "class": "uph-footer__socmed__link",
+      "color": "#ffffff",
+      "depth": 9,
+      "font": "18px 400",
+      "href": "https://www.youtube.com/c/UniversitasPelitaHarapan",
+      "tag": "a"
+    }
+  ],
+  "page": {
+    "h": 5084,
+    "w": 1425
+  },
+  "text": "EN ID DAFTAR SEKARANG Brosur Berita dan Acara Program Internasional Fasilitas Alumni Kelas Karyawan Kampus Kami UPH Medan UPH Surabaya UPH College Pusat Belajar UPH Lembaga Sertifikasi Profesi Akademik Pilihan Studi Fasilitas Kegiatan Mahasiswa Support untuk Mahasiswa Tentang UPH Membentuk Pemimpin dan Membangun Perubahan Membangun generasi dengan pendidikan kelas dunia dan fakultas beragam untuk mewujudkan masa depan Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan. Membentuk Pemimpin dan Membangun Perubahan Membangun generasi dengan pendidikan kelas dunia dan fakultas beragam untuk mewujudkan masa depan Membangun generasi berilmu dan visioner untuk mewujudkan masa depan penuh harapan. Membentuk Pemimpin dan Membangun Perubahan Memelopori Program Anestesiologi & Terapi Intensif di Indonesia Baca Selengkapnya Program Unggulan Jelajahi program unggulan kami, dirancang dengan kurikulum komprehensif. Temukan lebih banyak program Desain Komunikasi Visual: Desain Grafis Desain Komunikasi Visual: Desain Grafis Kedokteran Kedokteran Bisnis dan Kewirausahaan Pangan Bisnis dan Kewirausahaan Pangan Manajemen dan Analitika Rantai Pasok Manajemen dan Analitika Rantai Pasok Hukum Bisnis Hukum Bisnis Marketing, Retail & Innovation Marketing, Retail & Innovation Jelajahi Lebih Banyak Program Raih masa depan dengan beragam pilihan program kami Semua Tingkat Jenis Program Fakultas Jelajahi Kabar Terbaru Temukan kabar terbaru dan perkembangan menarik di fakultas kami. Baca cerita lainnya Supply Chain: Pengertian, Komponen, dan Perannya di Era Digital 23/10/2026 Article, Bisnis & Manajemen Supply Chain: Pengertian, Komponen, dan Perannya di Era Digital ESG: Pengertian, 3 Pilar, Contoh, dan Peluang Kariernya 21/10/2026 Article, Bisnis & Manajemen ESG: Pengertian, 3 Pilar, Contoh, dan Peluang Kariernya Apa Itu IoT (Internet of Things)? Pengertian, Cara Kerja, dan Contohnya 16/10/2026 Article, Sains, Teknologi, Teknik & Matematika Apa Itu IoT (Internet of Things)? Pengertian, Cara Kerja, dan Contohnya Jurusan Data Science dan Data Analytics: Panduan Lengkap untuk Calon Mahasiswa 15/10/2026 Article, Sains, Teknologi, Teknik & Matematika Jurusan Data Science dan Data Analytics: Panduan Lengkap untuk Calon Mahasiswa Apa Kata Lulusan Baca testimoni dan dapatkan inspirasi dari alumni kami yang berprestasi yang berbagi pemikiran mereka tentang fakultas kami. Baca Selengkapnya “Bagi saya, UPH lebih dari sekadar tempat untuk belajar. UPH adalah tempat untuk memperluas jaringan dan mempersiapkan diri untuk menghadapi berbagai tantangan di masa depan” Wahyu Wiwoho Ilmu Komunikasi, 2000 Producer & News Anchor at Metro TV “Ketika saya memilih UPH sebagai tempat belajar, saya tidak hanya mempelajari teori-teori. Pendidikan musik di sini telah mendorong musikalitas saya dan memperluas jaringan saya di industri musik. Para dosen menyediakan ruang bagi kami untuk mengekspresikan diri dan menciptakan karya kami sendiri.” Cantika Abigail Musik, 2011 Penyayi dan Pencipta Lagu “Belajar dari yang terbaik, bersama yang terbaik dari yang terbaik.” Sandiaga Uno Doctor of Management Minister of Tourism and Creative Economy Ikuti kami di Instagram Lihat kami di media sosial Instagram Instagram Instagram Instagram Instagram Instagram Jl. M. H. Thamrin Boulevard 1100 Lippo Village Tangerang 15811 Indonesia (021) 546 0901 undergraduate.admission@uph.edu graduate.admission@uph.edu Kampus Kami UPH Medan UPH Surabaya UPH College UPH Learning Center Lembaga Sertifikasi Profesi Tautan Cepat Lulusan UPH Festival Kalender Akademik Daftar Kontak Kontak Kami Registrar SDGs UPH Green Campus UPH Kuis Pekerjaan © Copyright 2025 Yayasan Universitas Pelita Harapan. All Rights Reserved. Kebijakan Privasi",
+  "title": "Universitas Pelita Harapan",
+  "unreadable_stylesheets": 1,
+  "url": "https://www.uph.edu/id/",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

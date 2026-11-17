@@ -1,0 +1,17 @@
+{
+  "name": "Universitas Pelita Harapan - SIAKAD & Smart Campus Monolith",
+  "short_name": "UPH SIAKAD",
+  "start_url": "/portal",
+  "display": "standalone",
+  "background_color": "#060E1E",
+  "theme_color": "#00205B",
+  "orientation": "portrait-primary",
+  "description": "Next-Gen Enterprise SIAKAD, LMS & Smart University ERP Monolith for Universitas Pelita Harapan",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
