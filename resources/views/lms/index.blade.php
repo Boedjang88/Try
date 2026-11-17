@@ -99,7 +99,13 @@
                 </div>
             </div>
 
-            <div class="flex items-center gap-3 shrink-0 w-full sm:w-auto">
+            <div class="flex items-center gap-2.5 shrink-0 w-full sm:w-auto">
+                @if($isExam)
+                <a href="/portal/student/lms/exam/{{ $classSection->id }}" class="flex-1 sm:flex-none text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-uph-crimson to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-bold text-xs shadow-md flex items-center justify-center gap-1.5 transition-all">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <span>Mulai Ujian Online</span>
+                </a>
+                @endif
                 <a href="/attendance/session/{{ $ses->id }}" class="flex-1 sm:flex-none text-center px-4 py-2.5 rounded-xl border border-uph-navy text-uph-navy hover:bg-uph-navy hover:text-white font-bold text-xs transition-colors">
                     <i class="fa-solid fa-qrcode mr-1"></i> Presensi QR
                 </a>

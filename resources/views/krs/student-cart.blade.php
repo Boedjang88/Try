@@ -71,6 +71,9 @@
             @endif
 
             @if($submission->status === 'approved')
+            <a href="/portal/student/exam-card" class="px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider shadow transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-chair"></i> Nomor Kursi Ujian
+            </a>
             <a href="/krs/print/{{ $submission->id }}" target="_blank" class="px-5 py-2.5 rounded-lg bg-uph-navy hover:bg-uph-navy-dark text-uph-gold font-bold text-xs uppercase tracking-wider shadow transition-colors flex items-center gap-2">
                 <i class="fa-solid fa-print"></i> Cetak KRS Resmi (PDF)
             </a>

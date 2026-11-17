@@ -38,8 +38,8 @@
         @foreach($events as $event)
             <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg transition-all flex flex-col justify-between group">
                 <div>
-                    <div class="relative h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ $event['image'] }}" alt="{{ $event['title'] }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="relative h-48 overflow-hidden bg-gradient-to-tr from-uph-navy to-slate-800">
+                        <img src="{{ $event['image'] }}" alt="{{ $event['title'] }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'">
                         <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-uph-navy/90 backdrop-blur-md text-uph-gold text-[10px] font-bold uppercase tracking-wider">
                             {{ $event['category'] }}
                         </span>

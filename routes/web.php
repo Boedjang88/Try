@@ -45,7 +45,6 @@ use App\Http\Controllers\Portal\StudentDashboardController;
 use App\Http\Controllers\PublicDocumentVerificationController;
 use App\Http\Controllers\PublicPortalController;
 use App\Http\Controllers\QrAttendanceController;
-use App\Http\Controllers\RectorDashboardController;
 use App\Http\Controllers\ThesisController;
 use App\Http\Controllers\YudisiumController;
 use App\Http\Middleware\EnsureRoleScope;
@@ -428,8 +427,8 @@ Route::middleware(['web', 'auth', 'active.account', 'role.privilege'])->group(fu
     Route::get('/bkd', [BkdController::class, 'index'])->name('bkd.index');
 
     // Module H.2: Executive Rector & Dean KPI Analytics Dashboard
-    Route::get('/dashboard/rector', [RectorDashboardController::class, 'index'])->name('rector.dashboard');
-    Route::get('/rector/dashboard', [RectorDashboardController::class, 'index'])->name('rector.dashboard.alias');
+    Route::get('/dashboard/rector', [ExecutiveDashboardController::class, 'rectorDashboard'])->name('rector.dashboard');
+    Route::get('/rector/dashboard', [ExecutiveDashboardController::class, 'rectorDashboard'])->name('rector.dashboard.alias');
 
     // Module I: PDDIKTI Neo Feeder Synchronization Engine
     Route::prefix('pddikti')->name('pddikti.')->group(function () {

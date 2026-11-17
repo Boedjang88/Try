@@ -65,8 +65,8 @@
         </button>
 
         <div class="flex items-center gap-3">
-            <a href="/id/">
-                <img class="h-9 w-auto" src="/wp-content/uploads/2026/08/Logo-UPH-WhiteHorizontalNEW.png" alt="UPH">
+            <a href="/">
+                <img class="h-9 w-auto" src="/assets/uph/img/logo-uph-white.png" alt="UPH" onerror="this.src='/assets/uph/img/logo-uph-vertical.png'">
             </a>
             <div class="hidden sm:block pl-3 border-l border-white/20">
                 <span class="text-xs font-bold text-white tracking-wider uppercase">SIAKAD & LMS TERPADU</span>
